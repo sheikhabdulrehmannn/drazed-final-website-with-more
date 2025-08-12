@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Leaf, Recycle, Zap, Droplets } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -12,26 +12,26 @@ const EnvironmentalStandards = () => {
   const practices = [
     {
       title: 'Waste Reduction',
-      description: 'Systematic waste minimization and recycling programs',
+      description: 'Systematic waste minimization, in-house scrap recycling, and responsible disposal of industrial waste.',
       icon: <Recycle className="h-8 w-8" />
     },
     {
       title: 'Water Recycling',
-      description: 'Closed-loop water systems and treatment processes',
+      description: 'Closed-loop water treatment systems to reduce fresh water usage in cooling and cleaning processes.',
       icon: <Droplets className="h-8 w-8" />
     },
     {
       title: 'Renewable Energy',
-      description: 'Solar power integration and energy efficiency initiatives',
+      description: 'Solar power integration and high-efficiency equipment to reduce carbon emissions across operations.',
       icon: <Zap className="h-8 w-8" />
     }
   ];
 
   const impactStats = [
-    { metric: '40%', description: 'Waste Reduction', period: 'Since 2022' },
-    { metric: '30%', description: 'Energy Savings', period: 'Annual' },
-    { metric: '25%', description: 'Water Conservation', period: 'Yearly' },
-    { metric: '2,500', description: 'Trees Planted', period: 'To Date' }
+    { metric: '40%', description: 'Waste Reduction', period: 'Since 2022 // TODO: Confirm actual %' },
+    { metric: '30%', description: 'Energy Savings', period: 'Annual // TODO: Confirm actual %' },
+    { metric: '25%', description: 'Water Conservation', period: 'Yearly // TODO: Confirm actual %' },
+    { metric: '2,500', description: 'Trees Planted', period: 'To Date // TODO: Confirm actual count' }
   ];
 
   return (
@@ -43,9 +43,9 @@ const EnvironmentalStandards = () => {
     >
       {/* Hero Banner */}
       <HeroBanner
-        backgroundImage="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1920&h=1080&fit=crop"
+        backgroundImage="https://via.placeholder.com/1920x1080?text=Millat+Environmental+Commitment"
         title="Environmental <span class='text-primary'>Standards</span>"
-        subtitle="Sustainable manufacturing practices and environmental protection initiatives"
+        subtitle="Eco-conscious manufacturing for a sustainable future"
       />
 
       {/* Overview */}
@@ -56,10 +56,11 @@ const EnvironmentalStandards = () => {
               Millat's <span className="text-primary">Environmental Responsibility</span>
             </h2>
             <p className="text-xl text-gray-700 leading-relaxed mb-8">
-              We recognize our responsibility to protect the environment for future generations. Our comprehensive environmental management program focuses on reducing our ecological footprint while maintaining operational excellence and product quality.
+              Millat Polymer & Rubber (Pvt) Ltd is committed to protecting the environment while delivering high-performance products.  
+              Our environmental management initiatives aim to reduce our ecological footprint through smarter resource use, cleaner production, and ongoing innovation.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Through innovative technologies, sustainable practices, and continuous improvement, we strive to be a leader in environmentally responsible manufacturing.
+              From reducing industrial waste to optimizing energy and water usage, we embed sustainability into every stage of our manufacturing process.
             </p>
           </div>
         </div>
@@ -73,7 +74,7 @@ const EnvironmentalStandards = () => {
               Key Environmental <span className="text-primary">Practices</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our commitment to environmental stewardship is demonstrated through concrete actions and measurable results.
+              Our sustainability initiatives focus on measurable outcomes and industry-leading practices.
             </p>
           </div>
 
@@ -102,7 +103,7 @@ const EnvironmentalStandards = () => {
               Environmental <span className="text-primary">Impact</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Measurable results from our environmental initiatives and sustainability programs.
+              Measuring progress ensures that our environmental goals translate into real-world benefits.
             </p>
           </div>
 
@@ -132,7 +133,7 @@ const EnvironmentalStandards = () => {
               Learn About Our CSR Initiatives
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Discover how our environmental standards support our broader corporate social responsibility commitments.
+              Explore how our environmental strategies align with our Corporate Social Responsibility goals.
             </p>
             <Link 
               to="/csr-initiatives" 
