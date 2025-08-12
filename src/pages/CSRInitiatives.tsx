@@ -12,19 +12,19 @@ const CSRInitiatives = () => {
   const initiatives = [
     {
       title: 'Environmental Sustainability',
-      description: 'Implementing eco-friendly manufacturing processes, waste reduction programs, and renewable energy initiatives to minimize our environmental footprint.',
+      description: 'Adopting eco-friendly manufacturing practices for HDPE, PVC, and rubber products, reducing waste through recycling programs, and exploring renewable energy solutions to lower our carbon footprint.',
       icon: <Leaf className="h-8 w-8" />,
       image: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&h=600&fit=crop'
     },
     {
       title: 'Worker Welfare',
-      description: 'Ensuring safe working conditions, providing comprehensive healthcare benefits, and creating opportunities for professional development and career growth.',
+      description: 'Providing safe and healthy working conditions, ISO-compliant processes, healthcare benefits, and opportunities for skills development to empower our employees.',
       icon: <Users className="h-8 w-8" />,
       image: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&h=600&fit=crop'
     },
     {
       title: 'Community Projects',
-      description: 'Supporting local communities through education initiatives, healthcare programs, and infrastructure development projects that create lasting positive impact.',
+      description: 'Supporting communities with educational initiatives, access to clean water, infrastructure upgrades, and local development projects in line with our UN Global Compact commitment.',
       icon: <Heart className="h-8 w-8" />,
       image: 'https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=800&h=600&fit=crop'
     }
@@ -34,25 +34,25 @@ const CSRInitiatives = () => {
     {
       number: '2,500+',
       label: 'Trees Planted',
-      description: 'Contributing to reforestation efforts',
+      description: 'Reforestation and green belt development in local communities',
       icon: <TreePine className="h-8 w-8" />
     },
     {
       number: '1,200',
       label: 'Training Hours',
-      description: 'Employee skill development programs',
+      description: 'Technical and safety training for workforce development',
       icon: <GraduationCap className="h-8 w-8" />
     },
     {
       number: '40%',
       label: 'Waste Reduced',
-      description: 'Through recycling and optimization',
+      description: 'Achieved through material optimization and recycling initiatives',
       icon: <Recycle className="h-8 w-8" />
     },
     {
       number: '15',
       label: 'Community Projects',
-      description: 'Supporting local development',
+      description: 'Partnerships for education, healthcare, and infrastructure support',
       icon: <Heart className="h-8 w-8" />
     }
   ];
@@ -68,7 +68,7 @@ const CSRInitiatives = () => {
       <HeroBanner
         backgroundImage="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1920&h=1080&fit=crop"
         title="CSR <span class='text-primary'>Initiatives</span>"
-        subtitle="Our commitment to creating positive impact through responsible business practices, environmental stewardship, and community engagement."
+        subtitle="How Millat Polymer & Rubber integrates sustainability, employee welfare, and community support into every aspect of our operations."
       />
 
       {/* CSR Philosophy */}
@@ -79,10 +79,10 @@ const CSRInitiatives = () => {
               Our CSR <span className="text-primary">Philosophy</span>
             </h2>
             <p className="text-xl text-gray-700 leading-relaxed mb-8">
-              At Millat Polymer & Rubber, we believe that business success goes hand in hand with social responsibility. Our commitment extends beyond manufacturing excellence to encompass environmental stewardship, employee welfare, and community development.
+              As a signatory to the United Nations Global Compact, Millat Polymer & Rubber believes true business success is measured not only by financial growth but by our contributions to society and the environment. 
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              We are dedicated to creating sustainable value for all our stakeholders while contributing to a better future for the communities we serve and the environment we share.
+              From sustainable manufacturing to social investment, we aim to create lasting value for our employees, customers, and the communities we operate in, while protecting the environment for future generations.
             </p>
           </div>
         </div>
@@ -96,7 +96,7 @@ const CSRInitiatives = () => {
               Key <span className="text-primary">Initiatives</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our comprehensive approach to corporate social responsibility focuses on three core areas of impact.
+              Our CSR strategy is built around three main pillars: environmental responsibility, workforce well-being, and community development.
             </p>
           </div>
 
@@ -129,7 +129,7 @@ const CSRInitiatives = () => {
               Our <span className="text-primary">Impact</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Measurable results from our commitment to social responsibility and sustainable practices.
+              Measurable results from our CSR programs and sustainability initiatives.
             </p>
           </div>
 
@@ -160,10 +160,10 @@ const CSRInitiatives = () => {
             </h2>
             <div className="bg-white p-8 rounded-2xl shadow-lg">
               <p className="text-xl text-gray-700 leading-relaxed mb-6">
-                Looking ahead, we are committed to expanding our CSR initiatives with ambitious goals for 2025 and beyond. Our roadmap includes achieving carbon neutrality, implementing circular economy principles, and establishing educational partnerships that benefit local communities.
+                In the years ahead, we plan to expand our environmental programs, target greater waste reduction, adopt circular economy principles, and build stronger partnerships with schools, vocational centers, and NGOs for educational uplift.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                We believe that sustainable business practices are not just good for society and the environment – they are essential for long-term business success and creating value for all stakeholders.
+                Our goal is to ensure our manufacturing excellence goes hand in hand with social progress and environmental protection — making a measurable difference locally and globally.
               </p>
             </div>
           </div>
@@ -178,7 +178,7 @@ const CSRInitiatives = () => {
               Learn About Our Standards
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Discover how our environmental standards and compliance practices support our CSR commitments.
+              See how our environmental policies and compliance practices support our CSR mission.
             </p>
             <Link 
               to="/compliance/environmental-standards" 
