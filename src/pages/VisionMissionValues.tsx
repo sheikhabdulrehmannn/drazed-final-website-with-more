@@ -12,32 +12,32 @@ const VisionMissionValues = () => {
   const values = [
     {
       title: 'Integrity',
-      description: 'We conduct business with honesty, transparency, and ethical practices in all our interactions.',
+      description: 'We operate with honesty, transparency, and ethical responsibility in every relationship — from customers to employees and partners.',
       icon: <Shield className="h-8 w-8" />
     },
     {
       title: 'Innovation',
-      description: 'We continuously seek new ways to improve our products, processes, and customer experience.',
+      description: 'We continually improve our processes, technologies, and products to meet the evolving needs of global industries.',
       icon: <Lightbulb className="h-8 w-8" />
     },
     {
       title: 'Sustainability',
-      description: 'We are committed to environmentally responsible manufacturing and sustainable business practices.',
+      description: 'We are committed to environmentally responsible manufacturing and sustainable solutions that protect future generations.',
       icon: <Leaf className="h-8 w-8" />
     },
     {
       title: 'Quality',
-      description: 'We maintain the highest standards in everything we do, from raw materials to finished products.',
+      description: 'We adhere to ISO 9001:2015 standards, ensuring premium quality from raw material selection to final inspection.',
       icon: <Award className="h-8 w-8" />
     },
     {
       title: 'Teamwork',
-      description: 'We believe in the power of collaboration and foster a culture of mutual respect and support.',
+      description: 'We value collaboration, respect, and a shared vision to achieve excellence together.',
       icon: <Users className="h-8 w-8" />
     },
     {
       title: 'Safety',
-      description: 'We prioritize the safety and well-being of our employees, customers, and communities.',
+      description: 'We uphold the highest safety standards for our workforce, customers, and the communities we serve.',
       icon: <Heart className="h-8 w-8" />
     }
   ];
@@ -53,7 +53,7 @@ const VisionMissionValues = () => {
       <HeroBanner
         backgroundImage="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=1920&h=1080&fit=crop"
         title="Vision, Mission & <span class='text-primary'>Values</span>"
-        subtitle="Our guiding principles that drive excellence, innovation, and sustainable growth in everything we do."
+        subtitle="Our principles define our path — driving innovation, quality, and sustainable growth in everything we do."
       />
 
       {/* Vision Statement */}
@@ -65,7 +65,7 @@ const VisionMissionValues = () => {
             </h2>
             <div className="bg-light p-12 rounded-2xl shadow-lg">
               <p className="text-2xl lg:text-3xl text-gray-700 leading-relaxed font-light italic">
-                "To be a globally recognized leader in the polymer manufacturing industry, renowned for our innovation, quality, and commitment to sustainable practices that benefit our customers, employees, and communities worldwide."
+                "To be a globally recognized leader in polymer and rubber manufacturing, renowned for delivering innovative, high-quality, and sustainable solutions that empower industries and enhance communities worldwide."
               </p>
             </div>
           </div>
@@ -82,10 +82,10 @@ const VisionMissionValues = () => {
               </h2>
               <div className="bg-white p-8 rounded-2xl shadow-lg">
                 <p className="text-xl text-gray-700 leading-relaxed mb-6">
-                  To be the leading manufacturer of molded polymer components for global industry, driving success for our clients through continuous improvement, integrity, and innovation.
+                  To manufacture world-class HDPE pipes, PVC water stops, RCC pipe rubber rings, gaskets, and molded rubber components that meet the highest global standards, serving both OEM and aftermarket needs across multiple industries.
                 </p>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  We are committed to delivering exceptional value through superior products, outstanding service, and sustainable business practices that create lasting partnerships with our customers and positive impact in our communities.
+                  Guided by innovation, integrity, and a commitment to sustainability, we strive to deliver exceptional value, build lasting partnerships, and contribute positively to the industries and communities we serve — both in Pakistan and across international markets.
                 </p>
               </div>
             </div>
@@ -108,7 +108,7 @@ const VisionMissionValues = () => {
               Our Core <span className="text-primary">Values</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              These fundamental principles guide our decisions, shape our culture, and define who we are as an organization.
+              These values reflect our identity and commitment to excellence in manufacturing, service, and community engagement.
             </p>
           </div>
 
@@ -137,7 +137,7 @@ const VisionMissionValues = () => {
               See Our Values in Action
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Learn about our corporate social responsibility initiatives and community impact programs.
+              Discover our corporate social responsibility initiatives and how we contribute to a better future.
             </p>
             <Link 
               to="/csr-initiatives" 
