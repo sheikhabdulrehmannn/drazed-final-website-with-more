@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, HardHat, Shield, Users, Award } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -11,27 +11,27 @@ const OccupationalHealthSafety = () => {
 
   const protocols = [
     {
-      title: 'Safety Training',
-      description: 'Comprehensive training programs for all employees',
+      title: 'Comprehensive Safety Training',
+      description: 'Ongoing training programs covering equipment handling, hazard awareness, and emergency response for all employees.',
       icon: <Users className="h-8 w-8" />
     },
     {
-      title: 'PPE Usage',
-      description: 'Mandatory personal protective equipment protocols',
+      title: 'Mandatory PPE Compliance',
+      description: 'Strict enforcement of personal protective equipment (PPE) usage across all production and warehouse areas.',
       icon: <HardHat className="h-8 w-8" />
     },
     {
-      title: 'Safety Audits',
-      description: 'Regular safety inspections and compliance audits',
+      title: 'Routine Safety Audits',
+      description: 'Regular safety inspections, risk assessments, and compliance checks in line with occupational health regulations.',
       icon: <Shield className="h-8 w-8" />
     }
   ];
 
   const achievements = [
     { metric: '0', description: 'Lost Time Accidents', period: '2024' },
-    { metric: '100%', description: 'Safety Training Completion', period: 'Annual' },
-    { metric: '24/7', description: 'Safety Monitoring', period: 'Continuous' },
-    { metric: '5', description: 'Safety Certifications', period: 'Current' }
+    { metric: '100%', description: 'Annual Safety Training Completion', period: 'Verified' },
+    { metric: '24/7', description: 'Workplace Safety Monitoring', period: 'Continuous' },
+    { metric: '5+', description: 'Safety Certifications', period: '// TODO: Confirm exact certifications' }
   ];
 
   return (
@@ -43,9 +43,9 @@ const OccupationalHealthSafety = () => {
     >
       {/* Hero Banner */}
       <HeroBanner
-        backgroundImage="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&h=1080&fit=crop"
+        backgroundImage="https://via.placeholder.com/1920x1080?text=Occupational+Health+and+Safety"
         title="Occupational Health & <span class='text-primary'>Safety</span>"
-        subtitle="Comprehensive safety policies protecting our workforce and maintaining safe operations"
+        subtitle="Protecting our workforce through rigorous safety standards, training, and continuous monitoring."
       />
 
       {/* Overview */}
@@ -53,13 +53,14 @@ const OccupationalHealthSafety = () => {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto scale-in">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              Our <span className="text-primary">Safety-First Approach</span>
+              Our <span className="text-primary">Safety-First Commitment</span>
             </h2>
             <p className="text-xl text-gray-700 leading-relaxed mb-8">
-              The safety and well-being of our employees is our top priority. We maintain a comprehensive occupational health and safety program that goes beyond regulatory requirements to create a culture where everyone goes home safely every day.
+              At Millat Polymer & Rubber (Pvt) Ltd, the safety and well-being of our employees is our highest priority.  
+              Our occupational health and safety program is designed to meet and exceed legal requirements, fostering a culture where safety is a shared responsibility.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Our proactive approach to safety includes continuous training, hazard identification, risk assessment, and the implementation of best practices across all operations.
+              We proactively identify hazards, conduct regular risk assessments, and implement best practices to ensure a safe working environment in every area of our operations.
             </p>
           </div>
         </div>
@@ -70,10 +71,10 @@ const OccupationalHealthSafety = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 scale-in">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              Safety <span className="text-primary">Protocols</span>
+              Our Safety <span className="text-primary">Protocols</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Comprehensive safety measures that protect our workforce and ensure safe operations.
+              A robust framework of training, equipment, and monitoring ensures workplace safety at every stage.
             </p>
           </div>
 
@@ -102,7 +103,7 @@ const OccupationalHealthSafety = () => {
               Safety <span className="text-primary">Achievements</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our commitment to safety is reflected in our outstanding safety record and certifications.
+              Our commitment to safety is backed by measurable results and industry-recognized certifications.
             </p>
           </div>
 
@@ -125,18 +126,18 @@ const OccupationalHealthSafety = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="section-padding bg-secondary text-white">
+      <section className="section-padding bg-millat-teal text-white">
         <div className="container mx-auto px-4 text-center">
           <div className="scale-in max-w-3xl mx-auto">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
               Learn About Our Environmental Standards
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Discover how our environmental protection initiatives complement our safety programs.
+              Discover how our sustainability practices work hand-in-hand with our safety commitments.
             </p>
             <Link 
               to="/compliance/environmental-standards" 
-              className="bg-white text-secondary hover:bg-gray-50 px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg inline-flex items-center space-x-2"
+              className="bg-white text-primary hover:bg-gray-50 px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg inline-flex items-center space-x-2"
             >
               <span>Environmental Standards</span>
               <ArrowRight className="h-5 w-5" />
