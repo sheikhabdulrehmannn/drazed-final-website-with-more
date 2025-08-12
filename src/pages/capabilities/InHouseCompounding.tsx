@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Beaker, Thermometer, Shield, Zap } from 'lucide-react';
 import { motion } from 'framer-motion';
-import HeroBanner from '../components/HeroBanner';
+import HeroBanner from '../../components/HeroBanner';
 import Card from '../components/Card';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
