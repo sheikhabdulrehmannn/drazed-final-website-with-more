@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Award, CheckCircle, TrendingUp, Users } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -12,17 +12,17 @@ const QualityManagementSystem = () => {
   const practices = [
     {
       title: 'Regular Auditing',
-      description: 'Systematic internal and external audits to ensure compliance',
+      description: 'Scheduled internal and third-party audits ensure compliance with ISO 9001:2015 and customer-specific standards.',
       icon: <CheckCircle className="h-8 w-8" />
     },
     {
       title: 'Continuous Improvement',
-      description: 'Ongoing process optimization and enhancement initiatives',
+      description: 'Ongoing process optimization programs driven by data analysis, customer feedback, and innovation.',
       icon: <TrendingUp className="h-8 w-8" />
     },
     {
       title: 'Defect Prevention',
-      description: 'Proactive measures to prevent quality issues before they occur',
+      description: 'Root-cause analysis and preventive measures built into every production stage to ensure zero-defect goals.',
       icon: <Award className="h-8 w-8" />
     }
   ];
@@ -36,9 +36,9 @@ const QualityManagementSystem = () => {
     >
       {/* Hero Banner */}
       <HeroBanner
-        backgroundImage="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1920&h=1080&fit=crop"
+        backgroundImage="https://via.placeholder.com/1920x1080?text=Quality+Management+System"
         title="Quality Management <span class='text-primary'>System</span>"
-        subtitle="ISO 9001:2015 certified processes ensuring consistent excellence in all operations"
+        subtitle="ISO 9001:2015 certified processes delivering consistent excellence for global clients."
       />
 
       {/* Overview */}
@@ -46,13 +46,14 @@ const QualityManagementSystem = () => {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto scale-in">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              Purpose and Benefits of <span className="text-primary">QMS</span>
+              Purpose and Benefits of <span className="text-primary">Our QMS</span>
             </h2>
             <p className="text-xl text-gray-700 leading-relaxed mb-8">
-              Our Quality Management System provides a structured framework for consistently delivering products that meet customer requirements and regulatory standards. It ensures that quality is built into every process, from design and development to production and delivery.
+              Millat Polymer & Rubber’s Quality Management System (QMS) is the foundation of our manufacturing excellence.  
+              It ensures that every product meets rigorous customer requirements, international standards, and industry regulations.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              By implementing ISO 9001:2015 standards, we demonstrate our commitment to quality excellence and continuous improvement, providing our customers with confidence in our products and services.
+              Our ISO 9001:2015 certification reflects a deep commitment to continuous improvement, defect prevention, and process efficiency — ensuring our customers receive dependable, high-performance solutions every time.
             </p>
           </div>
         </div>
@@ -63,10 +64,10 @@ const QualityManagementSystem = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 scale-in">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              QMS <span className="text-primary">Practices</span>
+              Core QMS <span className="text-primary">Practices</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Key practices that form the foundation of our quality management approach.
+              Key principles and processes that define our approach to quality assurance.
             </p>
           </div>
 
@@ -93,44 +94,45 @@ const QualityManagementSystem = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="slide-in-left">
               <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-                Impact on Product <span className="text-primary">Consistency</span>
+                How Our QMS Drives <span className="text-primary">Consistency</span>
               </h2>
               <p className="text-xl text-gray-700 leading-relaxed mb-6">
-                Our QMS directly impacts product consistency and client satisfaction by establishing standardized processes, clear quality criteria, and systematic monitoring. This results in predictable outcomes and reliable performance across all our products.
+                Our QMS ensures product consistency through standardized procedures, robust quality checkpoints,  
+                and clear performance metrics — resulting in repeatable, reliable outcomes across every production batch.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <Users className="h-6 w-6 text-primary" />
-                  <span className="text-lg">Enhanced customer satisfaction</span>
+                  <span className="text-lg">Customer satisfaction strengthened by reliability</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <TrendingUp className="h-6 w-6 text-primary" />
-                  <span className="text-lg">Reduced defect rates</span>
+                  <span className="text-lg">Lower defect rates through preventive action</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Award className="h-6 w-6 text-primary" />
-                  <span className="text-lg">Improved process efficiency</span>
+                  <span className="text-lg">Efficiency gains through process optimization</span>
                 </div>
               </div>
             </div>
             <div className="slide-in-right">
               <div className="bg-light p-8 rounded-2xl shadow-lg">
-                <h3 className="text-2xl font-bold mb-6 text-center">Quality Metrics</h3>
+                <h3 className="text-2xl font-bold mb-6 text-center">Quality Performance Metrics</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-primary">99.5%</div>
-                    <div className="text-sm text-gray-600">Quality Rate</div>
+                    <div className="text-3xl font-bold text-primary">// TODO%</div>
+                    <div className="text-sm text-gray-600">Verified Quality Rate</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-primary">98%</div>
+                    <div className="text-3xl font-bold text-primary">// TODO%</div>
                     <div className="text-sm text-gray-600">Customer Satisfaction</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-primary">0.5%</div>
+                    <div className="text-3xl font-bold text-primary">// TODO%</div>
                     <div className="text-sm text-gray-600">Defect Rate</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-primary">100%</div>
+                    <div className="text-3xl font-bold text-primary">// TODO%</div>
                     <div className="text-sm text-gray-600">On-Time Delivery</div>
                   </div>
                 </div>
@@ -148,7 +150,7 @@ const QualityManagementSystem = () => {
               Learn About Our Safety Standards
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Discover how our safety and quality standards complement our QMS framework.
+              See how our safety culture supports our quality objectives for every project.
             </p>
             <Link 
               to="/compliance/safety-quality-standards" 
