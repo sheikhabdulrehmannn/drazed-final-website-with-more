@@ -12,27 +12,27 @@ const InHouseToolingMoulding = () => {
   const benefits = [
     {
       title: 'Speed',
-      description: 'Reduced lead times through integrated tooling and production',
+      description: 'Significantly reduced lead times through integrated design, tooling, and production under one roof.',
       icon: <Zap className="h-8 w-8" />
     },
     {
       title: 'Customization',
-      description: 'Made-to-spec molds tailored to your exact requirements',
+      description: 'Precision-engineered molds tailored to exact client specifications for rubber, plastic, and composite products.',
       icon: <Wrench className="h-8 w-8" />
     },
     {
       title: 'Quality Control',
-      description: 'Direct oversight of tooling ensures consistent quality',
+      description: 'Full in-house oversight from mold design to final part production ensures consistent quality and accuracy.',
       icon: <CheckCircle className="h-8 w-8" />
     }
   ];
 
   const capabilities = [
-    'Molds for rubber, plastic, and composite materials',
-    'High-precision CNC and EDM machines',
+    'Custom molds for rubber, plastic, and composite materials',
+    'High-precision CNC and EDM machines // TODO: Confirm machine brands/models',
     'Capability for multi-cavity and complex designs',
     'Rapid prototyping and production tooling',
-    'Tool maintenance and modification services'
+    'Tool maintenance, repair, and modification services'
   ];
 
   return (
@@ -46,7 +46,7 @@ const InHouseToolingMoulding = () => {
       <HeroBanner
         backgroundImage="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&h=1080&fit=crop"
         title="Precision Tooling, <span class='text-primary'>Faster Turnaround</span>"
-        subtitle="Complete in-house tooling and moulding capabilities for superior control and quality"
+        subtitle="Complete in-house tooling and moulding capabilities for superior control and product excellence."
       />
 
       {/* Benefits */}
@@ -57,7 +57,7 @@ const InHouseToolingMoulding = () => {
               Benefits of In-House <span className="text-primary">Tooling</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our integrated approach to tooling and manufacturing delivers superior results.
+              Millat Polymer & Rubber’s fully integrated tooling facility enables faster delivery, better customization, and complete quality assurance.
             </p>
           </div>
 
@@ -87,7 +87,7 @@ const InHouseToolingMoulding = () => {
                 Tooling <span className="text-primary">Capabilities</span>
               </h2>
               <p className="text-xl text-gray-700 leading-relaxed mb-6">
-                Our comprehensive tooling capabilities enable us to create precision molds and tooling for a wide range of applications, from simple components to complex multi-cavity designs.
+                Our in-house tooling workshop produces precision molds for diverse applications — from automotive and industrial parts to customized specialty components.
               </p>
               <div className="space-y-4">
                 {capabilities.map((capability, index) => (
@@ -101,7 +101,7 @@ const InHouseToolingMoulding = () => {
             <div className="slide-in-right">
               <img
                 src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop"
-                alt="CNC Tooling Machine"
+                alt="In-house CNC Tooling Machine // TODO: Replace with actual Millat facility image"
                 className="rounded-2xl shadow-lg w-full h-auto scale-hover"
               />
             </div>
@@ -117,7 +117,7 @@ const InHouseToolingMoulding = () => {
               Case <span className="text-primary">Study</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Real-world example of how our in-house tooling capabilities deliver results.
+              How Millat Polymer & Rubber’s in-house tooling delivered superior results for a demanding project.
             </p>
           </div>
 
@@ -126,16 +126,16 @@ const InHouseToolingMoulding = () => {
               <div>
                 <h3 className="text-2xl font-bold mb-4 text-primary">Custom Rubber Gasket Tooling</h3>
                 <p className="text-lg text-gray-700 mb-6">
-                  A major industrial client required custom rubber gaskets with complex geometries and tight tolerances for a critical application.
+                  An industrial client required custom rubber gaskets with complex geometries and tight tolerances for critical equipment performance.
                 </p>
                 <div className="space-y-4">
                   <div className="bg-blue-50 p-4 rounded-lg">
                     <h4 className="font-semibold text-blue-800 mb-2">Challenge:</h4>
-                    <p className="text-blue-700">Complex multi-cavity mold design with intricate sealing surfaces and precise dimensional requirements.</p>
+                    <p className="text-blue-700">Designing and producing a complex multi-cavity mold with intricate sealing surfaces and micron-level precision. // TODO: Confirm tolerance range.</p>
                   </div>
                   <div className="bg-green-50 p-4 rounded-lg">
                     <h4 className="font-semibold text-green-800 mb-2">Solution:</h4>
-                    <p className="text-green-700">Our in-house tooling team designed and manufactured a precision mold, reducing production time by 30% compared to outsourced tooling.</p>
+                    <p className="text-green-700">Our in-house tooling team engineered, manufactured, and tested the mold, reducing production lead time by 30% and costs by 25% compared to outsourcing. // TODO: Confirm actual metrics.</p>
                   </div>
                 </div>
               </div>
@@ -148,15 +148,15 @@ const InHouseToolingMoulding = () => {
             <div className="mt-8 grid md:grid-cols-3 gap-4 text-center">
               <div className="bg-gray-50 p-4 rounded-lg">
                 <div className="text-2xl font-bold text-primary">30%</div>
-                <div className="text-sm text-gray-600">Faster Production</div>
+                <div className="text-sm text-gray-600">Faster Production // TODO: Confirm</div>
               </div>
               <div className="bg-gray-50 p-4 rounded-lg">
                 <div className="text-2xl font-bold text-primary">25%</div>
-                <div className="text-sm text-gray-600">Cost Reduction</div>
+                <div className="text-sm text-gray-600">Cost Reduction // TODO: Confirm</div>
               </div>
               <div className="bg-gray-50 p-4 rounded-lg">
                 <div className="text-2xl font-bold text-primary">100%</div>
-                <div className="text-sm text-gray-600">Quality Achievement</div>
+                <div className="text-sm text-gray-600">Quality Compliance // TODO: Confirm actual standard reference</div>
               </div>
             </div>
           </Card>
@@ -171,7 +171,7 @@ const InHouseToolingMoulding = () => {
               Explore Product Customization
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Discover how our tooling capabilities enable complete product customization for your specific needs.
+              See how our tooling and moulding expertise can turn your product ideas into reality.
             </p>
             <Link 
               to="/capabilities/product-customization" 
