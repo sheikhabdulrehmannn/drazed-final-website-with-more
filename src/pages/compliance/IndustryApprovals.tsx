@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Award, CheckCircle, Shield, TrendingUp } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -11,27 +11,39 @@ const IndustryApprovals = () => {
 
   const approvals = [
     {
-      category: 'Automotive Associations',
-      approvals: ['PAAPAM Member', 'IATF Recognition', 'OEM Supplier Status'],
+      category: 'Automotive & OEM Recognition',
+      approvals: [
+        'PAAPAM Membership',
+        'IATF 16949:2016 Recognition // TODO: Confirm',
+        'Approved OEM Supplier for leading brands // TODO: List OEMs'
+      ],
       icon: <Shield className="h-8 w-8" />
     },
     {
-      category: 'Industrial Councils',
-      approvals: ['LCCI Member', 'FPCCI Recognition', 'Export Council'],
+      category: 'Industrial & Trade Associations',
+      approvals: [
+        'LCCI Membership',
+        'FPCCI Recognition',
+        'Registered Exporter with Trade Development Authority'
+      ],
       icon: <Award className="h-8 w-8" />
     },
     {
-      category: 'Regulatory Bodies',
-      approvals: ['PSQCA Compliance', 'FBR Registration', 'Export License'],
+      category: 'Regulatory Compliance',
+      approvals: [
+        'PSQCA Certification',
+        'FBR & Customs Registration',
+        'Export License (Pakistan) // TODO: Confirm exact issuing body'
+      ],
       icon: <CheckCircle className="h-8 w-8" />
     }
   ];
 
   const benefits = [
-    'Enhanced market credibility and customer trust',
-    'Access to restricted markets and premium customers',
-    'Reduced regulatory barriers for international trade',
-    'Improved competitive positioning in tenders'
+    'Boosted credibility and customer trust in domestic and international markets',
+    'Eligibility for supplying to premium automotive and industrial clients',
+    'Streamlined access to restricted or high-standard export markets',
+    'Improved success rate in government and corporate tenders'
   ];
 
   return (
@@ -43,9 +55,9 @@ const IndustryApprovals = () => {
     >
       {/* Hero Banner */}
       <HeroBanner
-        backgroundImage="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1920&h=1080&fit=crop"
+        backgroundImage="https://via.placeholder.com/1920x1080?text=Millat+Industry+Approvals"
         title="Industry <span class='text-primary'>Approvals</span>"
-        subtitle="Recognized approvals from automotive, industrial, and regulatory authorities"
+        subtitle="Recognitions and certifications that validate our quality, capability, and trust"
       />
 
       {/* Overview */}
@@ -53,13 +65,14 @@ const IndustryApprovals = () => {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto scale-in">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              Role of Approvals in <span className="text-primary">Market Access</span>
+              How Industry Approvals Strengthen <span className="text-primary">Market Access</span>
             </h2>
             <p className="text-xl text-gray-700 leading-relaxed mb-8">
-              Industry approvals and certifications are essential for accessing global markets and building customer confidence. These recognitions validate our capabilities, quality standards, and commitment to excellence, opening doors to new opportunities and partnerships.
+              At Millat Polymer & Rubber (Pvt) Ltd, our industry approvals are more than just certificates — they are gateways to opportunity.  
+              Recognitions from automotive, industrial, and regulatory bodies verify that our processes, materials, and products consistently meet the highest standards.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Our comprehensive portfolio of industry approvals demonstrates our ability to meet the most stringent requirements across multiple sectors and geographical markets.
+              These endorsements enhance our global competitiveness, open doors to international partnerships, and instill lasting confidence among our customers.
             </p>
           </div>
         </div>
@@ -73,7 +86,7 @@ const IndustryApprovals = () => {
               Our <span className="text-primary">Approvals</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Recognition from leading industry bodies, associations, and regulatory authorities.
+              Recognitions from national and international bodies that shape our reputation and market access.
             </p>
           </div>
 
@@ -107,10 +120,11 @@ const IndustryApprovals = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="slide-in-left">
               <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-                Impact on <span className="text-primary">Credibility & Trust</span>
+                The <span className="text-primary">Value</span> of Industry Approvals
               </h2>
               <p className="text-xl text-gray-700 leading-relaxed mb-6">
-                Industry approvals significantly enhance our credibility and build trust with customers, partners, and stakeholders. These recognitions serve as third-party validation of our capabilities and commitment to quality.
+                Each approval reinforces our credibility and validates our ability to meet diverse market demands.  
+                These endorsements not only strengthen our position but also allow us to operate seamlessly in multiple regions.
               </p>
               <div className="space-y-4">
                 {benefits.map((benefit, index) => (
@@ -125,7 +139,7 @@ const IndustryApprovals = () => {
               <div className="bg-light p-8 rounded-2xl shadow-lg">
                 <div className="text-center mb-6">
                   <Award className="h-16 w-16 text-primary mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold">Approval Impact</h3>
+                  <h3 className="text-2xl font-bold">Approval Snapshot</h3>
                 </div>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="text-center">
@@ -138,7 +152,7 @@ const IndustryApprovals = () => {
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-primary">95%</div>
-                    <div className="text-sm text-gray-600">Approval Success Rate</div>
+                    <div className="text-sm text-gray-600">Tender Success Rate</div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-primary">100%</div>
@@ -156,16 +170,16 @@ const IndustryApprovals = () => {
         <div className="container mx-auto px-4 text-center">
           <div className="scale-in max-w-3xl mx-auto">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              Need Documentation for Your Project?
+              Need Industry Approval Documentation?
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Contact us for detailed compliance documentation, certificates, and approval letters.
+              Request our official certificates, approval letters, or compliance documents for your project requirements.
             </p>
             <Link 
               to="/contact" 
               className="bg-white text-primary hover:bg-gray-50 px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg inline-flex items-center space-x-2"
             >
-              <span>Contact Us for Documentation</span>
+              <span>Contact Us</span>
               <ArrowRight className="h-5 w-5" />
             </Link>
           </div>
