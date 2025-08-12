@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Wrench, Users, Lightbulb, CheckCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -10,65 +10,29 @@ const ProductCustomization = () => {
   useScrollAnimation();
 
   const processSteps = [
-    {
-      step: '1',
-      title: 'Consultation',
-      description: 'Understanding your specific requirements and application needs',
-      icon: <Users className="h-6 w-6" />
-    },
-    {
-      step: '2',
-      title: 'Design',
-      description: 'Creating detailed specifications and technical drawings',
-      icon: <Lightbulb className="h-6 w-6" />
-    },
-    {
-      step: '3',
-      title: 'Material Selection',
-      description: 'Choosing optimal materials for performance and durability',
-      icon: <Wrench className="h-6 w-6" />
-    },
-    {
-      step: '4',
-      title: 'Production',
-      description: 'Manufacturing your custom components to exact specifications',
-      icon: <CheckCircle className="h-6 w-6" />
-    }
+    { step: '1', title: 'Consultation', description: 'Understanding your application and specifications', icon: <Users className="h-6 w-6" /> },
+    { step: '2', title: 'Design & Materials', description: 'Developing technical drawings and selecting suitable materials like HDPE, PVC, EPDM, Silicone', icon: <Lightbulb className="h-6 w-6" /> },
+    { step: '3', title: 'Formulation & Molding', description: 'Compounding customized rubber or plastic blends in-house and manufacturing with precision', icon: <Wrench className="h-6 w-6" /> },
+    { step: '4', title: 'Validation & Delivery', description: 'Rigorous quality checks followed by efficient delivery—even for large export orders', icon: <CheckCircle className="h-6 w-6" /> }
   ];
 
   const examples = [
     {
-      title: 'Custom Engine Mount',
-      description: 'Developed specialized vibration-damping mount for heavy-duty industrial equipment',
-      challenge: 'Required unique geometry and enhanced vibration isolation',
-      solution: 'Custom EPDM compound with optimized durometer and bonding system'
-    },
-    {
-      title: 'Specialized Gasket System',
-      description: 'Multi-component sealing solution for high-pressure hydraulic application',
-      challenge: 'Complex sealing requirements with multiple fluid compatibility',
-      solution: 'Custom NBR formulation with integrated backup rings'
-    },
-    {
-      title: 'Custom Hose Assembly',
-      description: 'High-temperature resistant hose for specialized industrial process',
-      challenge: 'Extreme temperature cycling and chemical resistance requirements',
-      solution: 'Silicone-based compound with reinforced construction'
+      title: 'Custom Gasket & Rubber-Metal Ring Set',
+      description: 'Tailored sealing solution for water-stops and pipe systems',
+      challenge: 'Required precise dimension control and material flexibility',
+      solution: 'Custom EPDM formulation with integrated rubber-metal bonding'
     }
+    // TODO: Add more Millat-specific examples if available
   ];
 
   return (
-    <motion.div 
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5, ease: "easeIn" }}
-      className="min-h-screen"
-    >
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, ease: "easeIn" }} className="min-h-screen">
       {/* Hero Banner */}
       <HeroBanner
-        backgroundImage="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1920&h=1080&fit=crop"
+        backgroundImage="https://via.placeholder.com/1920x1080?text=Millat+Customization"
         title="Product <span class='text-primary'>Customization</span>"
-        subtitle="Tailored solutions designed to meet your specific requirements and applications"
+        subtitle="Tailored polymer and rubber solutions to meet unique requirements"
       />
 
       {/* Overview */}
@@ -76,13 +40,13 @@ const ProductCustomization = () => {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto scale-in">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              Why Customization is Our <span className="text-primary">Competitive Advantage</span>
+              Why Customization is Our <span className="text-primary">Advantage</span>
             </h2>
             <p className="text-xl text-gray-700 leading-relaxed mb-8">
-              Every application is unique, and standard solutions don't always meet specific performance requirements. Our customization capabilities allow us to create products that perfectly match your needs, providing superior performance and value.
+              At our Lahore-based facility (Omer Chowk, Bund Road), Millat specializes in manufacturing HDPE pipes, PVC water-stoppers, rubber-metal rings, and gaskets according to exact client specifications :contentReference[oaicite:0]{index=0}.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              From material formulation to complex geometries, we work closely with our customers to develop solutions that solve real-world challenges.
+              With in-house compounding, molding, and quality control, we ensure consistent performance and fast turnaround for customized components—delivered reliably across domestic and export markets :contentReference[oaicite:1]{index=1}.
             </p>
           </div>
         </div>
@@ -96,22 +60,15 @@ const ProductCustomization = () => {
               Our Customization <span className="text-primary">Process</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              A systematic approach that ensures your custom solution meets all requirements.
+              A client-centric process from consultation to delivery ensures your solutions are precisely made.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {processSteps.map((step, index) => (
-              <Card
-                key={index}
-                className={`${index % 2 === 0 ? 'slide-in-left' : 'slide-in-right'} text-center lift-hover`}
-              >
-                <div className="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
-                  {step.step}
-                </div>
-                <div className="bg-primary/10 w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-4 text-primary">
-                  {step.icon}
-                </div>
+            {processSteps.map((step, i) => (
+              <Card key={i} className={`${i % 2 === 0 ? 'slide-in-left' : 'slide-in-right'} text-center lift-hover`}>
+                <div className="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">{step.step}</div>
+                <div className="bg-primary/10 w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-4 text-primary">{step.icon}</div>
                 <h3 className="text-xl font-semibold mb-3">{step.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{step.description}</p>
               </Card>
@@ -125,32 +82,29 @@ const ProductCustomization = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 scale-in">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              Custom Project <span className="text-primary">Examples</span>
+              Custom Project <span className="text-primary">Example</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Real-world examples of how our customization capabilities solved unique challenges.
+              One of the many ways we have delivered tailored solutions to meet specialized requirements.
             </p>
           </div>
 
           <div className="space-y-8">
-            {examples.map((example, index) => (
-              <Card
-                key={index}
-                className={`${index % 2 === 0 ? 'slide-in-left' : 'slide-in-right'} lift-hover`}
-              >
+            {examples.map((ex, i) => (
+              <Card key={i} className={`${i % 2 === 0 ? 'slide-in-left' : 'slide-in-right'} lift-hover`}>
                 <div className="grid lg:grid-cols-2 gap-8">
                   <div>
-                    <h3 className="text-2xl font-bold mb-4 text-primary">{example.title}</h3>
-                    <p className="text-lg text-gray-700 mb-4">{example.description}</p>
+                    <h3 className="text-2xl font-bold mb-4 text-primary">{ex.title}</h3>
+                    <p className="text-lg text-gray-700 mb-4">{ex.description}</p>
                   </div>
                   <div className="space-y-4">
                     <div className="bg-red-50 p-4 rounded-lg">
                       <h4 className="font-semibold text-red-800 mb-2">Challenge:</h4>
-                      <p className="text-red-700">{example.challenge}</p>
+                      <p className="text-red-700">{ex.challenge}</p>
                     </div>
                     <div className="bg-green-50 p-4 rounded-lg">
                       <h4 className="font-semibold text-green-800 mb-2">Solution:</h4>
-                      <p className="text-green-700">{example.solution}</p>
+                      <p className="text-green-700">{ex.solution}</p>
                     </div>
                   </div>
                 </div>
@@ -167,13 +121,8 @@ const ProductCustomization = () => {
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
               Ready to Discuss Your Custom Requirements?
             </h2>
-            <p className="text-xl mb-8 opacity-90">
-              Contact us to start the conversation about your unique application needs.
-            </p>
-            <Link 
-              to="/contact" 
-              className="bg-white text-secondary hover:bg-gray-50 px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg inline-flex items-center space-x-2"
-            >
+            <p className="text-xl mb-8 opacity-90">Contact us to begin crafting a solution uniquely suited to your application needs.</p>
+            <Link to="/contact" className="bg-white text-secondary hover:bg-gray-50 px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg inline-flex items-center space-x-2">
               <span>Contact Us for Custom Orders</span>
               <ArrowRight className="h-5 w-5" />
             </Link>
