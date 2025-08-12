@@ -12,29 +12,29 @@ const QualityControlTesting = () => {
   const testingCapabilities = [
     {
       title: 'Tensile Strength Testing',
-      description: 'Measures product durability and material strength under stress',
+      description: 'Measures durability and performance under mechanical stress. // TODO: Confirm test machine model & max load capacity.',
       icon: <TestTube className="h-8 w-8" />
     },
     {
       title: 'Thermal Resistance',
-      description: 'High & low temperature testing to ensure performance in extreme conditions',
+      description: 'Simulates extreme hot and cold environments to ensure product reliability. // TODO: Confirm temperature range used.',
       icon: <Thermometer className="h-8 w-8" />
     },
     {
       title: 'Chemical Resistance',
-      description: 'Ensures compatibility with various fluids and chemical environments',
+      description: 'Verifies compatibility with automotive fluids, industrial chemicals, and environmental factors. // TODO: Confirm full list of chemicals tested.',
       icon: <Beaker className="h-8 w-8" />
     },
     {
       title: 'Dimensional Accuracy',
-      description: 'Precision measurements using CMM and advanced metrology equipment',
+      description: 'Precision measurement using advanced metrology tools. // TODO: Confirm if CMM brand/model is Hexagon, Mitutoyo, etc.',
       icon: <Ruler className="h-8 w-8" />
     }
   ];
 
   const certifications = [
     { name: 'ISO 9001:2015', logo: '/images/iso-certificate.jpg' },
-    { name: 'ISO/TS 16949', logo: '/images/iso-certificate.jpg' },
+    { name: 'ISO/TS 16949', logo: '/images/iso-certificate.jpg' }, // TODO: Confirm if currently valid
     { name: 'RoHS Compliant', logo: '/images/iso-certificate.jpg' },
     { name: 'REACH Compliant', logo: '/images/iso-certificate.jpg' }
   ];
@@ -50,7 +50,7 @@ const QualityControlTesting = () => {
       <HeroBanner
         backgroundImage="https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=1920&h=1080&fit=crop"
         title="Quality You Can <span class='text-primary'>Rely On</span>"
-        subtitle="Stringent quality checks ensuring performance, durability, and safety"
+        subtitle="Rigorous, documented, and certified quality testing for consistent excellence."
       />
 
       {/* Quality Philosophy */}
@@ -58,10 +58,10 @@ const QualityControlTesting = () => {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto scale-in">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              Quality Isn't Just a Step—<span className="text-primary">It's a Culture</span>
+              Quality Isn't Just a Step—<span className="text-primary">It's Who We Are</span>
             </h2>
             <p className="text-xl text-gray-700 leading-relaxed">
-              At Millat Polymer & Rubber, quality isn't just a step—it's a culture. Every product undergoes stringent checks to ensure performance, durability, and safety. Our comprehensive quality management system ensures that excellence is built into every component we manufacture.
+              At Millat Polymer & Rubber (Pvt) Ltd, quality is built into every stage of our process. Every product passes through strict performance, durability, and safety checks. Our quality management system is designed to meet and exceed international standards, ensuring customer satisfaction in every order we fulfill.
             </p>
           </div>
         </div>
@@ -75,7 +75,7 @@ const QualityControlTesting = () => {
               Testing <span className="text-primary">Capabilities</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our comprehensive testing capabilities ensure every product meets the highest standards.
+              We utilize advanced testing equipment to validate every aspect of product performance.
             </p>
           </div>
 
@@ -104,7 +104,7 @@ const QualityControlTesting = () => {
               Certifications & <span className="text-primary">Standards</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our certifications validate our commitment to quality and compliance with international standards.
+              Our certifications prove our dedication to global compliance and customer assurance.
             </p>
           </div>
 
@@ -136,7 +136,7 @@ const QualityControlTesting = () => {
               Learn About Material Compliance
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Discover how our material compliance certifications ensure safety and regulatory adherence.
+              Discover how our compliance certifications guarantee safety, environmental responsibility, and legal adherence.
             </p>
             <Link 
               to="/compliance/material-compliance-certifications" 
