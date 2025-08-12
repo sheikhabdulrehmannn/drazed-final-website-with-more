@@ -12,26 +12,38 @@ const SafetyQualityStandards = () => {
   const standards = [
     {
       industry: 'Automotive',
-      standards: ['ISO/TS 16949', 'IATF 16949', 'PPAP Requirements'],
+      standards: [
+        'IATF 16949:2016 Certified',
+        'ISO 9001:2015 Certified',
+        'PPAP & APQP Compliance'
+      ],
       icon: <Shield className="h-8 w-8" />
     },
     {
-      industry: 'Industrial',
-      standards: ['ISO 9001:2015', 'OSHA Compliance', 'CE Marking'],
+      industry: 'Industrial & OEM',
+      standards: [
+        'OSHA Compliance',
+        'CE Marking (where applicable)',
+        'Customer-Specific Requirements'
+      ],
       icon: <Settings className="h-8 w-8" />
     },
     {
-      industry: 'Construction',
-      standards: ['ASTM Standards', 'EN Standards', 'Building Codes'],
+      industry: 'Construction & Infrastructure',
+      standards: [
+        'ASTM Standards Compliance',
+        'EN Standards Compliance',
+        'Local Building Code Requirements'
+      ],
       icon: <Award className="h-8 w-8" />
     }
   ];
 
   const inspectionSteps = [
-    'In-line quality checks during production',
-    'Final product audits and testing',
-    'Sample testing and validation',
-    'Documentation and traceability'
+    'In-line quality checks at every production stage',
+    'Final product audits with dimensional and performance testing',
+    'Sample validation against customer specifications',
+    'Full documentation and traceability for each batch'
   ];
 
   return (
@@ -43,9 +55,9 @@ const SafetyQualityStandards = () => {
     >
       {/* Hero Banner */}
       <HeroBanner
-        backgroundImage="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&h=1080&fit=crop"
+        backgroundImage="https://via.placeholder.com/1920x1080?text=Safety+%26+Quality+Standards"
         title="Safety & Quality <span class='text-primary'>Standards</span>"
-        subtitle="Rigorous safety protocols and quality standards across all manufacturing processes"
+        subtitle="Rigorous protocols and internationally certified quality systems across all manufacturing processes."
       />
 
       {/* Overview */}
@@ -53,17 +65,16 @@ const SafetyQualityStandards = () => {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto scale-in">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              Safety in Product Design and <span className="text-primary">Manufacturing</span>
+              Safety in Product Design & <span className="text-primary">Manufacturing</span>
             </h2>
             <p className="text-xl text-gray-700 leading-relaxed mb-8">
-              Safety is integrated into every aspect of our product design and manufacturing
-              processes. From initial concept through final delivery, we ensure that all products
-              meet the highest safety standards and regulatory requirements for their intended
-              applications.
+              At Millat Polymer & Rubber, safety is embedded into every stage of product design and manufacturing.  
+              From material selection to final inspection, every product is engineered to meet or exceed  
+              international safety and quality requirements for its intended application.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Our comprehensive approach to safety and quality ensures that our products not only
-              meet specifications but exceed customer expectations for reliability and performance.
+              Our integrated approach ensures not only compliance but also superior performance,  
+              long-term durability, and customer confidence in every product we deliver.
             </p>
           </div>
         </div>
@@ -74,11 +85,10 @@ const SafetyQualityStandards = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 scale-in">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              Industry <span className="text-primary">Standards</span>
+              Industry <span className="text-primary">Certifications & Standards</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We meet and exceed standards across multiple industries, ensuring compliance and
-              safety.
+              Our operations meet and surpass industry-specific standards, verified through independent audits and certifications.
             </p>
           </div>
 
@@ -121,9 +131,8 @@ const SafetyQualityStandards = () => {
                 Inspection <span className="text-primary">Process</span>
               </h2>
               <p className="text-xl text-gray-700 leading-relaxed mb-6">
-                Our multi-stage inspection process ensures that every product meets quality and
-                safety standards before it reaches our customers. We employ both automated and
-                manual inspection methods to guarantee consistency and reliability.
+                Every product undergoes a multi-stage inspection process designed to verify  
+                compliance, detect potential defects, and ensure optimal performance before delivery.
               </p>
               <div className="space-y-4">
                 {inspectionSteps.map((step, index) => (
@@ -140,7 +149,7 @@ const SafetyQualityStandards = () => {
             <div className="slide-in-right">
               <div className="bg-light p-8 rounded-2xl shadow-lg">
                 <img
-                  src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&h=600&fit=crop"
+                  src="https://via.placeholder.com/800x600?text=Inspection+Process"
                   alt="Quality inspection"
                   className="rounded-lg mb-6"
                 />
@@ -150,15 +159,15 @@ const SafetyQualityStandards = () => {
 
               <div className="grid md:grid-cols-2 gap-6 mt-8">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary">99.7%</div>
+                  <div className="text-3xl font-bold text-primary">// TODO%</div>
                   <div className="text-sm text-gray-600">Pass Rate</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary">100%</div>
+                  <div className="text-3xl font-bold text-primary">// TODO%</div>
                   <div className="text-sm text-gray-600">Inspection Coverage</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary">0.3%</div>
+                  <div className="text-3xl font-bold text-primary">// TODO%</div>
                   <div className="text-sm text-gray-600">Defect Rate</div>
                 </div>
                 <div className="text-center">
@@ -179,8 +188,7 @@ const SafetyQualityStandards = () => {
               Learn About Our Quality Management System
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Discover how our comprehensive QMS framework supports our safety and quality
-              standards.
+              Discover how our QMS framework works hand-in-hand with our safety standards for total customer assurance.
             </p>
             <Link
               to="/compliance/quality-management-system"
