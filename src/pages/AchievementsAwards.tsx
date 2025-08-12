@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+// AchievementsAwards.jsx
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Award, Trophy, Star, Medal, Calendar } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -19,31 +20,31 @@ const AchievementsAwards = () => {
     {
       title: 'Export Excellence Award',
       year: '2022',
-      description: 'Recognized by the Pakistan Export Development Fund for outstanding performance in international markets.',
+      description: 'Recognized by [AWARDING BODY – Placeholder] for outstanding performance in international markets.',
       category: 'Export Achievement'
     },
     {
       title: 'Best Manufacturing Practices',
       year: '2023',
-      description: 'Honored by the Lahore Chamber of Commerce for implementing innovative manufacturing processes and operational excellence.',
+      description: 'Honored by [AWARDING BODY – Placeholder] for implementing innovative manufacturing processes and operational excellence.',
       category: 'Manufacturing Excellence'
     },
     {
       title: 'Environmental Stewardship Award',
       year: '2023',
-      description: 'Acknowledged for implementing sustainable manufacturing practices and environmental conservation initiatives.',
+      description: 'Acknowledged by [AWARDING BODY – Placeholder] for implementing sustainable manufacturing practices and environmental conservation initiatives.',
       category: 'Sustainability'
     },
     {
       title: 'Innovation in Polymer Technology',
       year: '2025',
-      description: 'Recognized for developing advanced polymer formulations and innovative manufacturing techniques.',
+      description: 'Recognized by [AWARDING BODY – Placeholder] for developing advanced polymer formulations and innovative manufacturing techniques.',
       category: 'Innovation'
     },
     {
       title: 'Customer Service Excellence',
       year: '2025',
-      description: 'Awarded for maintaining exceptional customer satisfaction ratings and building long-term partnerships.',
+      description: 'Awarded by [AWARDING BODY – Placeholder] for maintaining exceptional customer satisfaction ratings and building long-term partnerships.',
       category: 'Customer Focus'
     }
   ];
@@ -52,27 +53,27 @@ const AchievementsAwards = () => {
     {
       year: '2012',
       achievement: 'Company Establishment',
-      description: 'Founded Millat Polymer & Rubber with a vision for excellence'
+      description: 'Founded Millat Polymer & Rubber with a vision for excellence.'
     },
     {
       year: '2013',
       achievement: 'First International Contract',
-      description: 'Secured first major export order to Netherlands'
+      description: 'Secured first major export order to [COUNTRY – Placeholder].'
     },
     {
       year: '2020',
       achievement: 'ISO Certification',
-      description: 'Achieved ISO 9001:2015 quality management certification'
+      description: 'Achieved ISO 9001:2015 quality management certification.'
     },
     {
       year: '2022',
       achievement: 'Market Expansion',
-      description: 'Expanded to 15+ countries across multiple continents'
+      description: 'Expanded to [NUMBER – Placeholder] countries across multiple continents.'
     },
     {
       year: '2025',
       achievement: 'Production Milestone',
-      description: 'Reached 500+ tons monthly production capacity'
+      description: 'Reached [TONNAGE – Placeholder] tons monthly production capacity.'
     }
   ];
 
@@ -155,9 +156,7 @@ const AchievementsAwards = () => {
           </div>
 
           <div className="relative max-w-4xl mx-auto">
-            {/* Timeline Line */}
             <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-primary hidden lg:block"></div>
-            
             <div className="space-y-12">
               {milestones.map((milestone, index) => (
                 <motion.div
@@ -182,10 +181,7 @@ const AchievementsAwards = () => {
                       <p className="text-gray-600">{milestone.description}</p>
                     </div>
                   </div>
-                  
-                  {/* Timeline Dot */}
                   <div className="hidden lg:block w-4 h-4 bg-secondary rounded-full border-4 border-white shadow-lg"></div>
-                  
                   <div className="lg:w-1/2 w-full"></div>
                 </motion.div>
               ))}
@@ -202,7 +198,7 @@ const AchievementsAwards = () => {
               <div className="bg-primary/10 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 text-primary">
                 <Trophy className="h-8 w-8" />
               </div>
-              <h3 className="text-3xl font-bold text-primary mb-2">6+</h3>
+              <h3 className="text-3xl font-bold text-primary mb-2">[AWARD COUNT – Placeholder]</h3>
               <p className="text-lg font-semibold">Awards Won</p>
             </Card>
 
@@ -218,7 +214,7 @@ const AchievementsAwards = () => {
               <div className="bg-primary/10 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 text-primary">
                 <Medal className="h-8 w-8" />
               </div>
-              <h3 className="text-3xl font-bold text-primary mb-2">3</h3>
+              <h3 className="text-3xl font-bold text-primary mb-2">[CERT COUNT – Placeholder]</h3>
               <p className="text-lg font-semibold">Certifications</p>
             </Card>
 
@@ -226,8 +222,8 @@ const AchievementsAwards = () => {
               <div className="bg-secondary/10 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 text-secondary">
                 <Award className="h-8 w-8" />
               </div>
-              <h3 className="text-3xl font-bold text-secondary mb-2">4</h3>
-              <p className="text-lg font-semibold">13+ Years of Excellence</p>
+              <h3 className="text-3xl font-bold text-secondary mb-2">13+</h3>
+              <p className="text-lg font-semibold">Years of Excellence</p>
             </Card>
           </div>
         </div>
