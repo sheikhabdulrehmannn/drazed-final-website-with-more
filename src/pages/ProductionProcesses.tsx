@@ -13,37 +13,37 @@ const ProductionProcesses = () => {
     {
       step: '1',
       title: 'Design',
-      description: 'CAD design of components',
+      description: 'CAD-based product design and development, with flexibility for custom requirements. // TODO: Confirm if 3D scanning/prototyping is used.',
       icon: <Lightbulb className="h-6 w-6" />
     },
     {
       step: '2',
       title: 'Tooling',
-      description: 'Custom mold creation in-house',
+      description: 'Precision mold creation tailored to each product specification. // TODO: Confirm if molds are fully made in-house or partially outsourced.',
       icon: <Wrench className="h-6 w-6" />
     },
     {
       step: '3',
       title: 'Molding',
-      description: 'Rubber & plastic molding to specifications',
+      description: 'High-precision rubber and plastic molding to exact client specifications. // TODO: Confirm all molding types used (injection, compression, transfer).',
       icon: <Cog className="h-6 w-6" />
     },
     {
       step: '4',
       title: 'Finishing',
-      description: 'Trimming, polishing, surface treatments',
+      description: 'Detail-oriented trimming, polishing, and surface enhancement. // TODO: Confirm special surface treatments like coatings or printing.',
       icon: <Settings className="h-6 w-6" />
     },
     {
       step: '5',
       title: 'Testing',
-      description: 'Rigorous quality checks',
+      description: 'Comprehensive quality checks to ensure performance and durability. // TODO: Confirm specific tests used (tensile, hardness, leak, heat aging).',
       icon: <TestTube className="h-6 w-6" />
     },
     {
       step: '6',
       title: 'Packaging',
-      description: 'Secure and customized packing',
+      description: 'Secure, customizable packaging solutions designed for safe transit.',
       icon: <Package className="h-6 w-6" />
     }
   ];
@@ -51,22 +51,22 @@ const ProductionProcesses = () => {
   const technologies = [
     {
       title: 'Automation Systems',
-      description: 'Advanced automated production lines',
+      description: 'Advanced automated production lines for consistent quality. // TODO: Confirm if additional automation systems are used.',
       icon: <Cpu className="h-8 w-8" />
     },
     {
       title: 'Advanced QC Machines',
-      description: 'Precision quality control equipment',
+      description: 'State-of-the-art quality control equipment for precision testing.',
       icon: <CheckCircle className="h-8 w-8" />
     },
     {
       title: 'Material Handling Systems',
-      description: 'Efficient material flow and logistics',
+      description: 'Streamlined material flow and logistics systems.',
       icon: <Truck className="h-8 w-8" />
     },
     {
       title: 'Precision Molding Equipment',
-      description: 'High-precision injection and compression molding',
+      description: 'High-precision injection and compression molding machines. // TODO: Confirm if extrusion lines or mixing mills should be added.',
       icon: <Zap className="h-8 w-8" />
     }
   ];
@@ -82,7 +82,7 @@ const ProductionProcesses = () => {
       <HeroBanner
         backgroundImage="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1920&h=1080&fit=crop"
         title="Advanced <span class='text-primary'>Production Processes</span>"
-        subtitle="Efficiency, precision, and flexibility from concept to final product"
+        subtitle="Efficiency, precision, and flexibility from concept to final product."
       />
 
       {/* Introduction */}
@@ -93,7 +93,7 @@ const ProductionProcesses = () => {
               Optimized for Quality and <span className="text-primary">Cost-Effectiveness</span>
             </h2>
             <p className="text-xl text-gray-700 leading-relaxed">
-              Our production processes combine efficiency, precision, and flexibility. From concept to final product, every stage is optimized for quality and cost-effectiveness, ensuring that our customers receive superior products that meet their exact specifications.
+              At Millat Polymer & Rubber (Pvt) Ltd, our production processes are designed to balance efficiency, precision, and flexibility. From concept to the final product, every stage is streamlined to deliver consistent quality at competitive costs, meeting the most demanding client specifications.
             </p>
           </div>
         </div>
@@ -107,15 +107,13 @@ const ProductionProcesses = () => {
               Step-by-Step <span className="text-primary">Process</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our systematic approach ensures consistent quality and efficiency at every stage.
+              Our systematic, stage-by-stage approach ensures consistent quality, efficiency, and reliability in every order.
             </p>
           </div>
 
           {/* Timeline */}
           <div className="relative">
-            {/* Timeline Line */}
             <div className="absolute top-1/2 left-0 right-0 h-1 bg-primary transform -translate-y-1/2 hidden lg:block"></div>
-            
             <div className="grid lg:grid-cols-6 gap-8">
               {processSteps.map((step, index) => (
                 <motion.div
@@ -126,17 +124,12 @@ const ProductionProcesses = () => {
                   viewport={{ once: true }}
                   className="text-center relative"
                 >
-                  {/* Step Circle */}
-                  <div className="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold relative z-10 shadow-lg">
+                  <div className="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold shadow-lg">
                     {step.step}
                   </div>
-                  
-                  {/* Icon */}
                   <div className="bg-primary/10 w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-4 text-primary">
                     {step.icon}
                   </div>
-                  
-                  {/* Content */}
                   <h3 className="text-lg font-semibold mb-2">{step.title}</h3>
                   <p className="text-gray-600 text-sm">{step.description}</p>
                 </motion.div>
@@ -154,7 +147,7 @@ const ProductionProcesses = () => {
               Technology <span className="text-primary">Used</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              State-of-the-art equipment and systems that enable precision manufacturing.
+              We integrate advanced technology and modern equipment to maintain superior production standards.
             </p>
           </div>
 
@@ -183,7 +176,7 @@ const ProductionProcesses = () => {
               See Our Quality Control & Testing
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Discover how our rigorous quality control processes ensure every product meets our high standards.
+              Learn how our rigorous quality control processes ensure every product meets Millat’s exacting standards.
             </p>
             <Link 
               to="/quality-control-testing" 
