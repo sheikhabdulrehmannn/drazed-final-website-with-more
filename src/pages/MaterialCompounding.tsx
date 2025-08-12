@@ -12,22 +12,22 @@ const MaterialCompounding = () => {
   const materials = [
     {
       name: 'Rubber (Natural, SBR, NBR)',
-      description: 'High-quality rubber compounds for various applications',
+      description: 'Premium-grade rubber compounds developed in-house for automotive, industrial, and sealing applications. // TODO: Confirm if other rubber types are included',
       properties: ['Excellent elasticity', 'Chemical resistance', 'Temperature stability']
     },
     {
       name: 'EPDM',
-      description: 'Weather-resistant sealing solutions',
+      description: 'High-durability sealing compounds designed for outdoor and high-temperature environments.',
       properties: ['UV resistance', 'Ozone protection', 'Temperature range: -40°C to +150°C']
     },
     {
       name: 'Silicone',
-      description: 'High-temperature performance materials',
-      properties: ['Temperature range: -60°C to +200°C', 'Food grade available', 'Excellent flexibility']
+      description: 'High-performance silicone compounds suitable for extreme temperature ranges and hygienic applications.',
+      properties: ['Temperature range: -60°C to +200°C', 'Food-grade variants available', 'Excellent flexibility']
     },
     {
       name: 'PVC & Engineering Plastics',
-      description: 'Durable, versatile thermoplastic solutions',
+      description: 'Tough, dimensionally stable thermoplastic solutions for automotive and industrial needs.',
       properties: ['Chemical resistance', 'Dimensional stability', 'Cost-effective processing']
     }
   ];
@@ -43,7 +43,7 @@ const MaterialCompounding = () => {
       <HeroBanner
         backgroundImage="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=1920&h=1080&fit=crop"
         title="Material <span class='text-primary'>Compounding</span>"
-        subtitle="Consistency, flexibility, and performance from the ground up"
+        subtitle="Consistency, flexibility, and performance — engineered from the ground up."
       />
 
       {/* Overview */}
@@ -54,7 +54,10 @@ const MaterialCompounding = () => {
               Controlling Every <span className="text-primary">Batch</span>
             </h2>
             <p className="text-xl text-gray-700 leading-relaxed">
-              Our in-house material compounding ensures consistency, flexibility, and performance. By controlling every batch, we maintain product quality from the ground up, enabling us to create custom formulations that meet specific requirements while ensuring reliable supply and consistent properties.
+              At Millat Polymer & Rubber, all compounding is done in-house for complete quality control. 
+              This ensures consistent material performance, reliable supply, and the flexibility to develop 
+              custom formulations tailored to specific project needs. 
+              // TODO: Confirm if we highlight lab testing here or in Quality Control page.
             </p>
           </div>
         </div>
@@ -68,7 +71,7 @@ const MaterialCompounding = () => {
               Materials <span className="text-primary">Used</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our comprehensive range of materials enables us to meet diverse application requirements.
+              Our diverse material portfolio allows us to meet performance requirements across multiple industries.
             </p>
           </div>
 
@@ -106,7 +109,9 @@ const MaterialCompounding = () => {
                 Custom <span className="text-primary">Formulations</span>
               </h2>
               <p className="text-xl text-gray-700 leading-relaxed mb-6">
-                Tailored blends to meet chemical, thermal, or mechanical requirements. Our experienced chemists work closely with customers to develop specialized compounds that deliver optimal performance for specific applications.
+                Our formulation team develops specialized compounds for challenging applications, optimizing 
+                chemical resistance, thermal stability, and mechanical strength. 
+                // TODO: Confirm if we mention industries served in this section.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
@@ -126,7 +131,7 @@ const MaterialCompounding = () => {
             <div className="slide-in-right">
               <img
                 src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=800&h=600&fit=crop"
-                alt="Material Compounding"
+                alt="Material Compounding // TODO: Replace with real Millat lab or mixing facility image"
                 className="rounded-2xl shadow-lg w-full h-auto scale-hover"
               />
             </div>
@@ -142,7 +147,7 @@ const MaterialCompounding = () => {
               Discover In-House Compounding
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Learn more about our comprehensive in-house compounding capabilities and custom formulation services.
+              Learn how our compounding expertise ensures consistent quality and custom solutions for your industry.
             </p>
             <Link 
               to="/capabilities/in-house-compounding" 
