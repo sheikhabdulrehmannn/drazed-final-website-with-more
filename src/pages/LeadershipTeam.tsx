@@ -13,37 +13,37 @@ const LeadershipTeam = () => {
     {
       name: 'Sheikh Abid Ali',
       position: 'Chairman & Founder',
-      bio: 'Visionary leader with over 25 years of experience in polymer manufacturing. Under his leadership, Millat Polymer has achieved remarkable growth and international recognition since founding the company in 2012.',
+      bio: 'Founder and Chairman with decades of experience in polymer, rubber, and plastic manufacturing. Under his visionary leadership, Millat Polymer & Rubber has grown into one of Pakistan’s leading producers of HDPE pipes, PVC water stops, and rubber components, with a strong presence in domestic and export markets including the Netherlands, UAE, Australia, and Europe.',
       image: '/images/chairman-placeholder.jpg'
     },
     {
       name: 'Muhammad Hassan',
       position: 'Chief Executive Officer',
-      bio: 'Strategic business leader with extensive experience in operations management and international trade. Drives operational excellence and market expansion.',
+      bio: 'Provides strategic direction and operational leadership to ensure sustainable growth. Oversees expansion into OEM and aftermarket sectors, driving international business relationships and long-term client partnerships.',
       image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face'
     },
     {
       name: 'Dr. Sarah Ahmed',
       position: 'Chief Technology Officer',
-      bio: 'PhD in Materials Science with 12+ years in polymer research and development. Leads innovation initiatives and technical advancement programs.',
+      bio: 'PhD in Materials Science specializing in polymer and elastomer technologies. Leads R&D initiatives to enhance product performance, durability, and compliance with ISO 9001:2015 quality standards.',
       image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face'
     },
     {
       name: 'Ahmad Khan',
       position: 'Head of Manufacturing',
-      bio: 'Manufacturing expert with 18 years of experience in production optimization and quality management. Ensures operational efficiency and product excellence.',
+      bio: 'Oversees production of HDPE pipes, PVC water stops, and molded rubber products with a focus on operational efficiency, safety, and adherence to international specifications.',
       image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face'
     },
     {
       name: 'Fatima Malik',
       position: 'Head of Quality Assurance',
-      bio: 'Quality management specialist with expertise in ISO standards and continuous improvement. Maintains our commitment to exceptional product quality.',
+      bio: 'Ensures that every product meets or exceeds ISO 9001:2015 certification requirements. Leads continuous improvement programs and strict quality control from raw materials to final delivery.',
       image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face'
     },
     {
       name: 'Usman Tariq',
       position: 'Head of Sales & Marketing',
-      bio: 'Business development leader with proven track record in international markets. Drives customer relationships and market expansion strategies.',
+      bio: 'Manages customer relationships across Pakistan and international markets, developing marketing strategies that promote Millat’s diverse product portfolio and competitive strengths.',
       image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face'
     }
   ];
@@ -51,22 +51,22 @@ const LeadershipTeam = () => {
   const principles = [
     {
       title: 'Strategic Thinking',
-      description: 'Long-term vision combined with tactical execution to drive sustainable growth.',
+      description: 'Combining long-term vision with tactical execution to expand market share and strengthen Millat’s position as a global manufacturing leader.',
       icon: <Target className="h-8 w-8" />
     },
     {
       title: 'Customer Focus',
-      description: 'Putting customer needs at the center of every decision and business strategy.',
+      description: 'Placing client requirements at the heart of every decision, ensuring customized solutions for OEM and aftermarket sectors.',
       icon: <Users className="h-8 w-8" />
     },
     {
       title: 'Innovation Drive',
-      description: 'Fostering a culture of continuous improvement and technological advancement.',
+      description: 'Investing in R&D and advanced manufacturing techniques to deliver products that meet evolving international standards.',
       icon: <Lightbulb className="h-8 w-8" />
     },
     {
       title: 'Performance Excellence',
-      description: 'Setting high standards and consistently delivering exceptional results.',
+      description: 'Maintaining world-class quality and operational benchmarks to exceed client expectations consistently.',
       icon: <TrendingUp className="h-8 w-8" />
     }
   ];
@@ -82,7 +82,7 @@ const LeadershipTeam = () => {
       <HeroBanner
         backgroundImage="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1920&h=1080&fit=crop"
         title="Leadership <span class='text-primary'>Team</span>"
-        subtitle="Meet the visionary leaders driving innovation, excellence, and sustainable growth at Millat Polymer & Rubber."
+        subtitle="Meet the leaders steering Millat Polymer & Rubber (Pvt) Ltd toward excellence in polymer and rubber manufacturing."
       />
 
       {/* Introduction */}
@@ -93,10 +93,10 @@ const LeadershipTeam = () => {
               Leadership <span className="text-primary">Philosophy</span>
             </h2>
             <p className="text-xl text-gray-700 leading-relaxed mb-8">
-              Our leadership team combines decades of industry experience with a shared commitment to excellence, innovation, and sustainable growth. We believe in empowering our people, fostering collaboration, and maintaining the highest standards of integrity in everything we do.
+              Our leadership team blends decades of industry experience with an unwavering commitment to quality, innovation, and sustainability. We believe in empowering teams, fostering collaboration, and maintaining integrity in every action.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Together, we guide Millat Polymer & Rubber toward a future of continued success, technological advancement, and positive impact on the communities we serve.
+              Together, we guide Millat Polymer & Rubber to deliver ISO-certified products, strengthen relationships with global clients, and contribute positively to the industries and communities we serve.
             </p>
           </div>
         </div>
@@ -110,7 +110,7 @@ const LeadershipTeam = () => {
               Meet Our <span className="text-primary">Leaders</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Experienced professionals dedicated to driving our company's mission and values forward.
+              Industry professionals committed to advancing our mission, values, and reputation as a trusted manufacturing partner.
             </p>
           </div>
 
@@ -144,7 +144,7 @@ const LeadershipTeam = () => {
               Leadership <span className="text-primary">Principles</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              The guiding principles that shape our leadership approach and drive organizational success.
+              Principles that guide our decisions, shape our strategies, and define our success in the manufacturing industry.
             </p>
           </div>
 
@@ -173,7 +173,7 @@ const LeadershipTeam = () => {
               Ready to Partner with Us?
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Connect with our leadership team to discuss your project requirements and explore partnership opportunities.
+              Contact our leadership team to discuss your requirements and explore how we can work together.
             </p>
             <Link 
               to="/contact" 
