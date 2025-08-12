@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Package, Truck, Globe, Shield } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -11,34 +11,34 @@ const SupplyChainLogistics = () => {
 
   const processSteps = [
     {
-      title: 'Packaging',
-      description: 'Secure packaging designed for product protection during transit',
+      title: 'Protective Packaging',
+      description: 'Custom-designed packaging solutions to safeguard rubber, PVC, and plastic components during transport.',
       icon: <Package className="h-8 w-8" />
     },
     {
-      title: 'Storage',
-      description: 'Climate-controlled warehousing with inventory management systems',
+      title: 'Secure Storage',
+      description: 'Climate-controlled warehousing with FIFO inventory management for product integrity.',
       icon: <Shield className="h-8 w-8" />
     },
     {
-      title: 'Delivery Tracking',
-      description: 'Real-time shipment tracking and delivery confirmation',
+      title: 'Tracked Delivery',
+      description: 'Real-time shipment tracking to ensure transparency from dispatch to delivery.',
       icon: <Truck className="h-8 w-8" />
     },
     {
-      title: 'Customs Compliance',
-      description: 'Complete documentation and regulatory compliance for international shipping',
+      title: 'Customs & Compliance',
+      description: 'Complete export documentation and adherence to international trade regulations.',
       icon: <Globe className="h-8 w-8" />
     }
   ];
 
   const regions = [
-    { name: 'Netherlands', description: 'Primary European market' },
-    { name: 'UAE', description: 'Middle East distribution hub' },
-    { name: 'Australia', description: 'Asia-Pacific operations' },
-    { name: 'Pakistan', description: 'Domestic market leadership' },
-    { name: 'Europe', description: 'Expanding European presence' },
-    { name: 'Asia', description: 'Growing Asian markets' }
+    { name: 'Netherlands', description: 'Key entry point for European market distribution.' },
+    { name: 'UAE', description: 'Primary logistics hub for Middle East deliveries.' },
+    { name: 'Australia', description: 'Supplying the Asia-Pacific region with tailored solutions.' },
+    { name: 'Pakistan', description: 'Strong domestic market presence with rapid fulfillment.' },
+    { name: 'Europe', description: 'Expanding network to serve growing industrial needs.' },
+    { name: 'Asia', description: 'Reaching emerging markets with competitive delivery times.' }
   ];
 
   return (
@@ -50,9 +50,9 @@ const SupplyChainLogistics = () => {
     >
       {/* Hero Banner */}
       <HeroBanner
-        backgroundImage="https://images.unsplash.com/photo-1553413077-190dd305871c?w=1920&h=1080&fit=crop"
+        backgroundImage="https://via.placeholder.com/1920x1080?text=Supply+Chain+%26+Logistics"
         title="Supply Chain & <span class='text-primary'>Logistics</span>"
-        subtitle="Efficient global supply chain management and reliable delivery systems"
+        subtitle="Global delivery efficiency and dependable supply chain management for industrial components."
       />
 
       {/* Overview */}
@@ -60,13 +60,13 @@ const SupplyChainLogistics = () => {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto scale-in">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              Importance of <span className="text-primary">Timely Delivery</span>
+              Keeping Your Operations <span className="text-primary">On Track</span>
             </h2>
             <p className="text-xl text-gray-700 leading-relaxed mb-8">
-              In today's global marketplace, reliable supply chain management is crucial for business success. Our comprehensive logistics capabilities ensure that products reach customers safely, on time, and in perfect condition, regardless of destination.
+              Millat Polymer & Rubber (Pvt) Ltd understands that timely delivery is as important as product quality. Our supply chain systems are built to meet urgent deadlines while protecting product integrity.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              We understand that our customers depend on us not just for quality products, but for dependable delivery that keeps their operations running smoothly.
+              From packaging engineering to customs documentation, we ensure that every shipment—whether domestic or international—arrives safely, on time, and ready for immediate use.
             </p>
           </div>
         </div>
@@ -80,7 +80,7 @@ const SupplyChainLogistics = () => {
               Our Logistics <span className="text-primary">Process</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              A comprehensive approach to packaging, storage, delivery, and compliance.
+              A reliable, step-by-step system to ensure your order arrives in perfect condition.
             </p>
           </div>
 
@@ -109,7 +109,7 @@ const SupplyChainLogistics = () => {
               Global <span className="text-primary">Reach</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our logistics network spans multiple continents, serving diverse markets with specialized requirements.
+              Delivering products across continents with a network designed for speed, reliability, and compliance.
             </p>
           </div>
 
@@ -130,7 +130,7 @@ const SupplyChainLogistics = () => {
 
           <div className="mt-16 text-center scale-in">
             <div className="bg-light p-8 rounded-2xl shadow-lg max-w-2xl mx-auto">
-              <h3 className="text-2xl font-bold mb-4">Delivery Statistics</h3>
+              <h3 className="text-2xl font-bold mb-4">Delivery Performance</h3>
               <div className="grid md:grid-cols-3 gap-6">
                 <div>
                   <div className="text-3xl font-bold text-primary">99.2%</div>
@@ -142,7 +142,7 @@ const SupplyChainLogistics = () => {
                 </div>
                 <div>
                   <div className="text-3xl font-bold text-primary">48hrs</div>
-                  <div className="text-sm text-gray-600">Average Processing</div>
+                  <div className="text-sm text-gray-600">Average Processing Time</div>
                 </div>
               </div>
             </div>
@@ -151,18 +151,18 @@ const SupplyChainLogistics = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="section-padding bg-millat-teal text-white">
+      <section className="section-padding bg-secondary text-white">
         <div className="container mx-auto px-4 text-center">
           <div className="scale-in max-w-3xl mx-auto">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              Ready to Discuss Your Logistics Needs?
+              Let’s Streamline Your Supply Chain
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Contact us to learn more about our supply chain capabilities and delivery options.
+              Partner with Millat Polymer & Rubber for a smooth, compliant, and on-time delivery experience.
             </p>
             <Link 
               to="/contact" 
-              className="bg-white text-primary hover:bg-gray-50 px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg inline-flex items-center space-x-2"
+              className="bg-white text-secondary hover:bg-gray-50 px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg inline-flex items-center space-x-2"
             >
               <span>Contact Us</span>
               <ArrowRight className="h-5 w-5" />
