@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, TestTube, Shield, CheckCircle, Settings } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -11,24 +11,24 @@ const TestingQualityAssurance = () => {
 
   const testingTypes = [
     {
-      name: 'Tensile Testing',
-      description: 'Measuring material strength and elongation properties',
-      equipment: 'Universal testing machines with digital data logging'
+      name: 'Tensile Strength & Elongation',
+      description: 'Evaluating mechanical performance for durability in automotive, industrial, and infrastructure applications.',
+      equipment: 'Universal Testing Machines with real-time digital analysis'
     },
     {
-      name: 'Hardness Testing',
-      description: 'Shore A/D durometer testing for rubber and plastic components',
-      equipment: 'Digital durometers with automated measurement systems'
+      name: 'Hardness & Compression Testing',
+      description: 'Shore A/D hardness testing for rubber and plastics, ensuring compliance with OEM specifications.',
+      equipment: 'Precision durometers with automated reading systems'
     },
     {
-      name: 'Chemical Resistance',
-      description: 'Testing material compatibility with various chemicals and fluids',
-      equipment: 'Environmental chambers and chemical exposure testing'
+      name: 'Chemical & Fluid Resistance',
+      description: 'Assessment of component resilience against oils, fuels, coolants, and aggressive chemicals.',
+      equipment: 'Specialized chemical exposure chambers and environmental simulation units'
     },
     {
-      name: 'Dimensional Accuracy',
-      description: 'Precision measurement and tolerance verification',
-      equipment: 'CMM machines and optical measurement systems'
+      name: 'Dimensional Accuracy Verification',
+      description: 'Precision measurements to confirm tight tolerances in molded and extruded parts.',
+      equipment: 'CMM machines, laser scanners, and optical inspection systems'
     }
   ];
 
@@ -41,9 +41,9 @@ const TestingQualityAssurance = () => {
     >
       {/* Hero Banner */}
       <HeroBanner
-        backgroundImage="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=1920&h=1080&fit=crop"
+        backgroundImage="https://via.placeholder.com/1920x1080?text=Millat+Quality+Assurance"
         title="Testing & Quality <span class='text-primary'>Assurance</span>"
-        subtitle="Comprehensive testing capabilities ensuring every product meets stringent quality standards"
+        subtitle="Ensuring every Millat product meets the highest industry and customer standards"
       />
 
       {/* Overview */}
@@ -51,13 +51,13 @@ const TestingQualityAssurance = () => {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto scale-in">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              Millat's <span className="text-primary">Quality-First Philosophy</span>
+              Millat's <span className="text-primary">Quality Commitment</span>
             </h2>
             <p className="text-xl text-gray-700 leading-relaxed mb-8">
-              Quality is not just a checkpoint in our process – it's embedded in every stage of production. Our comprehensive testing and quality assurance program ensures that every component meets or exceeds customer specifications and industry standards.
+              At Millat Polymer & Rubber (Pvt) Ltd, quality is embedded in every step — from material sourcing to final dispatch. Our advanced laboratory and skilled quality control team ensure every product not only meets but often exceeds OEM and international standards.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              From incoming raw materials to finished products, our quality team maintains rigorous standards that have earned us ISO 9001:2015 certification and the trust of customers worldwide.
+              Our facility operates under strict ISO-certified procedures, reinforced by continuous testing, inspection, and traceability protocols.
             </p>
           </div>
         </div>
@@ -68,10 +68,10 @@ const TestingQualityAssurance = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 scale-in">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              Testing <span className="text-primary">Types</span>
+              Comprehensive <span className="text-primary">Testing Capabilities</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our comprehensive testing capabilities cover all critical material and product properties.
+              Our quality lab covers mechanical, dimensional, and chemical testing to guarantee consistent performance.
             </p>
           </div>
 
@@ -102,29 +102,29 @@ const TestingQualityAssurance = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="slide-in-left">
               <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-                Modern Testing <span className="text-primary">Equipment</span>
+                Cutting-Edge <span className="text-primary">Testing Facilities</span>
               </h2>
               <p className="text-xl text-gray-700 leading-relaxed mb-6">
-                Our quality laboratory is equipped with state-of-the-art testing machines and software systems that provide accurate, repeatable results. We continuously invest in the latest technology to maintain our competitive edge.
+                Millat’s testing laboratory integrates automated systems and high-precision instruments to ensure repeatable, reliable results. Our investments in technology strengthen our position as a trusted OEM supplier.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <Settings className="h-6 w-6 text-primary" />
-                  <span className="text-lg">Automated testing systems</span>
+                  <span className="text-lg">Automated tensile & hardness testing</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Shield className="h-6 w-6 text-primary" />
-                  <span className="text-lg">Calibrated measurement tools</span>
+                  <span className="text-lg">Certified calibration processes</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-6 w-6 text-primary" />
-                  <span className="text-lg">Digital data logging and analysis</span>
+                  <span className="text-lg">Digital data recording & traceability</span>
                 </div>
               </div>
             </div>
             <div className="slide-in-right">
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=600&fit=crop"
+                src="https://via.placeholder.com/800x600?text=Millat+Testing+Lab"
                 alt="Testing Equipment"
                 className="rounded-2xl shadow-lg w-full h-auto scale-hover"
               />
@@ -141,7 +141,7 @@ const TestingQualityAssurance = () => {
               Learn More About Our Quality Control
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Discover our comprehensive quality control and testing processes in manufacturing.
+              Explore how our rigorous testing ensures long-term performance and reliability.
             </p>
             <Link 
               to="/manufacturing" 
