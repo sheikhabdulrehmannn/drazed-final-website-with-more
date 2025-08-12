@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, FileCheck, TestTube, Shield, CheckCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -12,26 +12,26 @@ const MaterialComplianceCertifications = () => {
   const certifications = [
     {
       name: 'RoHS Compliant',
-      description: 'Restriction of Hazardous Substances directive compliance',
+      description: 'Restriction of Hazardous Substances compliance — ensuring all materials are free from harmful levels of lead, mercury, cadmium, and other restricted substances.',
       icon: <Shield className="h-8 w-8" />
     },
     {
       name: 'REACH Compliant',
-      description: 'European Chemical Regulation compliance for safe chemical use',
+      description: 'Compliance with European Union REACH regulations, guaranteeing safe chemical usage in all rubber, plastic, and PVC products.',
       icon: <FileCheck className="h-8 w-8" />
     },
     {
-      name: 'FDA Grade Materials',
-      description: 'Food contact safe materials meeting FDA requirements',
+      name: 'FDA-Grade Materials // TODO: Confirm scope',
+      description: 'Food-contact-safe materials meeting applicable FDA standards for select industrial and sealing applications.',
       icon: <CheckCircle className="h-8 w-8" />
     }
   ];
 
   const testingSteps = [
-    'Raw material verification and documentation review',
-    'Chemical composition analysis and testing',
-    'Compliance verification against regulatory standards',
-    'Certificate of compliance generation and tracking'
+    'Incoming raw material verification with supplier certificates',
+    'Chemical composition analysis in accredited third-party or in-house labs',
+    'Verification against applicable global standards (RoHS, REACH, FDA)',
+    'Issuance of compliance documentation with full traceability'
   ];
 
   return (
@@ -43,9 +43,9 @@ const MaterialComplianceCertifications = () => {
     >
       {/* Hero Banner */}
       <HeroBanner
-        backgroundImage="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=1920&h=1080&fit=crop"
+        backgroundImage="https://via.placeholder.com/1920x1080?text=Material+Compliance+Certifications"
         title="Material Compliance <span class='text-primary'>Certifications</span>"
-        subtitle="Certified materials meeting international standards including RoHS, REACH, and FDA requirements"
+        subtitle="Ensuring every material we use meets stringent international safety and environmental standards"
       />
 
       {/* Overview */}
@@ -53,13 +53,14 @@ const MaterialComplianceCertifications = () => {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto scale-in">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              Importance of <span className="text-primary">Compliant Materials</span>
+              Why <span className="text-primary">Material Compliance</span> Matters
             </h2>
             <p className="text-xl text-gray-700 leading-relaxed mb-8">
-              Using compliant raw materials is essential for ensuring product safety, regulatory compliance, and market access. Our rigorous material compliance program guarantees that all materials meet or exceed international standards and customer requirements.
+              At Millat Polymer & Rubber (Pvt) Ltd, material compliance is at the heart of our quality commitment.  
+              Every component — from rubber seals to PVC profiles — is manufactured using materials that meet or exceed global environmental, health, and safety regulations.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              We maintain comprehensive documentation and traceability for all materials, providing our customers with the confidence that their products meet global regulatory requirements.
+              By adhering to RoHS, REACH, and other applicable certifications, we not only ensure customer safety and product integrity but also enable smooth entry into regulated markets worldwide.
             </p>
           </div>
         </div>
@@ -70,10 +71,10 @@ const MaterialComplianceCertifications = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 scale-in">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              Material <span className="text-primary">Certifications</span>
+              Certified <span className="text-primary">Material Standards</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our materials meet the highest international standards for safety and environmental compliance.
+              All materials are sourced and tested to meet internationally recognized compliance requirements for safety, performance, and sustainability.
             </p>
           </div>
 
@@ -100,10 +101,10 @@ const MaterialComplianceCertifications = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="slide-in-left">
               <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-                Material Testing <span className="text-primary">Process</span>
+                Our Material Testing <span className="text-primary">Process</span>
               </h2>
               <p className="text-xl text-gray-700 leading-relaxed mb-6">
-                Our comprehensive testing process ensures that all materials are thoroughly checked before use in production. We maintain strict protocols for material verification and compliance documentation.
+                Every batch of raw materials undergoes rigorous verification to ensure compliance before production begins. Our protocols combine supplier validation, in-house inspection, and third-party lab testing where required.
               </p>
               <div className="space-y-4">
                 {testingSteps.map((step, index) => (
@@ -120,24 +121,24 @@ const MaterialComplianceCertifications = () => {
               <div className="bg-light p-8 rounded-2xl shadow-lg">
                 <div className="text-center mb-6">
                   <TestTube className="h-16 w-16 text-primary mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold">Testing Statistics</h3>
+                  <h3 className="text-2xl font-bold">Testing Snapshot</h3>
                 </div>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="text-center">
                     <div className="text-3xl font-bold text-primary">100%</div>
-                    <div className="text-sm text-gray-600">Materials Tested</div>
+                    <div className="text-sm text-gray-600">Batches Tested</div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-primary">99.8%</div>
                     <div className="text-sm text-gray-600">Compliance Rate</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-primary">24hrs</div>
-                    <div className="text-sm text-gray-600">Testing Turnaround</div>
+                    <div className="text-3xl font-bold text-primary">&lt;24hrs</div>
+                    <div className="text-sm text-gray-600">Average Turnaround</div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-primary">15+</div>
-                    <div className="text-sm text-gray-600">Test Parameters</div>
+                    <div className="text-sm text-gray-600">Compliance Parameters</div>
                   </div>
                 </div>
               </div>
@@ -151,16 +152,16 @@ const MaterialComplianceCertifications = () => {
         <div className="container mx-auto px-4 text-center">
           <div className="scale-in max-w-3xl mx-auto">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              Learn About Our Testing Capabilities
+              Request Material Compliance Documentation
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Discover our comprehensive testing and quality assurance processes that ensure material compliance.
+              We provide complete traceability and certification for every material used in your project.
             </p>
             <Link 
-              to="/capabilities/testing-quality-assurance" 
+              to="/contact" 
               className="bg-white text-primary hover:bg-gray-50 px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg inline-flex items-center space-x-2"
             >
-              <span>Testing & Quality Assurance</span>
+              <span>Contact Us</span>
               <ArrowRight className="h-5 w-5" />
             </Link>
           </div>
