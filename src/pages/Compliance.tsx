@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Shield, Leaf, HardHat, FileCheck, Award, CheckCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -12,47 +12,47 @@ const Compliance = () => {
   const complianceAreas = [
     {
       title: 'Quality Management System',
-      description: 'ISO 9001:2015 certified quality management ensuring consistent excellence in all operations.',
+      description: 'ISO 9001:2015 certified system ensuring consistent quality for OEM, aftermarket, and industrial applications.',
       icon: <Award className="h-8 w-8" />,
       link: '/compliance/quality-management-system'
     },
     {
       title: 'Environmental Standards',
-      description: 'Sustainable manufacturing practices and environmental protection initiatives.',
+      description: 'Eco-conscious production methods, waste reduction, and resource-efficient manufacturing aligned with international environmental directives.',
       icon: <Leaf className="h-8 w-8" />,
       link: '/compliance/environmental-standards'
     },
     {
       title: 'Occupational Health & Safety',
-      description: 'Comprehensive safety policies protecting our workforce and maintaining safe operations.',
+      description: 'Strict workplace safety protocols and employee well-being programs to maintain a hazard-free environment.',
       icon: <HardHat className="h-8 w-8" />,
       link: '/compliance/occupational-health-safety'
     },
     {
       title: 'Material Compliance',
-      description: 'Certified materials meeting international standards including RoHS, REACH, and FDA requirements.',
+      description: 'All materials meet or exceed RoHS, REACH, and FDA requirements, supporting global export compliance.',
       icon: <FileCheck className="h-8 w-8" />,
       link: '/compliance/material-compliance-certifications'
     },
     {
       title: 'Safety & Quality Standards',
-      description: 'Rigorous safety protocols and quality standards across all manufacturing processes.',
+      description: 'Rigorous in-process quality controls, traceability systems, and final inspection protocols across all production lines.',
       icon: <Shield className="h-8 w-8" />,
       link: '/compliance/safety-quality-standards'
     },
     {
       title: 'Industry Approvals',
-      description: 'Recognized approvals from automotive, industrial, and regulatory authorities.',
+      description: 'Certified supplier for leading automotive brands and industries worldwide. Recognized by major OEMs and regulatory bodies.',
       icon: <CheckCircle className="h-8 w-8" />,
       link: '/compliance/industry-approvals'
     }
   ];
 
   const certifications = [
-    { name: 'ISO 9001:2015', description: 'Quality Management System' },
+    { name: 'ISO 9001:2015', description: 'Certified Quality Management System' },
     { name: 'RoHS Compliant', description: 'Restriction of Hazardous Substances' },
     { name: 'REACH Compliant', description: 'European Chemical Regulation' },
-    { name: 'FDA Grade Materials', description: 'Food Contact Safe Materials' }
+    { name: 'FDA Grade Materials', description: 'Safe for food and medical contact' }
   ];
 
   return (
@@ -64,9 +64,9 @@ const Compliance = () => {
     >
       {/* Hero Banner */}
       <HeroBanner
-        backgroundImage="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1920&h=1080&fit=crop"
+        backgroundImage="https://via.placeholder.com/1920x1080?text=Millat+Compliance"
         title="<span class='text-primary'>Compliance</span>"
-        subtitle="Meeting global standards with responsibility"
+        subtitle="Global standards, responsible manufacturing"
       />
 
       {/* Overview */}
@@ -77,10 +77,11 @@ const Compliance = () => {
               Our Commitment to <span className="text-primary">Excellence</span>
             </h2>
             <p className="text-xl text-gray-700 leading-relaxed mb-8">
-              At Millat Polymer & Rubber, compliance is not just about meeting requirements – it's about exceeding expectations. Our comprehensive approach to quality, safety, and environmental responsibility ensures that every product we manufacture meets the highest international standards.
+              At Millat Polymer & Rubber (Pvt) Ltd, compliance means more than ticking boxes—it’s about building trust.  
+              We integrate quality, environmental care, and safety into every layer of our operations to meet and exceed the demands of global markets.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              We are dedicated to maintaining transparency, accountability, and continuous improvement in all aspects of our operations, from raw material sourcing to final product delivery.
+              Our processes are guided by internationally recognized standards, continuous improvement principles, and a strong culture of accountability.
             </p>
           </div>
         </div>
@@ -94,7 +95,7 @@ const Compliance = () => {
               Compliance <span className="text-primary">Areas</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Comprehensive compliance framework covering all aspects of our operations.
+              Our integrated compliance framework spans product quality, material safety, environmental responsibility, and workplace health.
             </p>
           </div>
 
@@ -132,7 +133,7 @@ const Compliance = () => {
               Our <span className="text-primary">Certifications</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Recognized certifications that validate our commitment to quality and compliance.
+              Globally recognized certifications that reinforce our role as a reliable and compliant manufacturing partner.
             </p>
           </div>
 
@@ -165,19 +166,19 @@ const Compliance = () => {
                 <div>
                   <h3 className="text-xl font-semibold mb-4 text-primary">For Our Customers</h3>
                   <ul className="space-y-2 text-gray-700">
-                    <li className="flex items-center"><CheckCircle className="h-5 w-5 text-primary mr-2" />Guaranteed product quality and consistency</li>
-                    <li className="flex items-center"><CheckCircle className="h-5 w-5 text-primary mr-2" />Regulatory compliance assurance</li>
-                    <li className="flex items-center"><CheckCircle className="h-5 w-5 text-primary mr-2" />Reduced risk and liability</li>
-                    <li className="flex items-center"><CheckCircle className="h-5 w-5 text-primary mr-2" />Access to global markets</li>
+                    <li className="flex items-center"><CheckCircle className="h-5 w-5 text-primary mr-2" />Consistent product quality</li>
+                    <li className="flex items-center"><CheckCircle className="h-5 w-5 text-primary mr-2" />Regulatory compliance for exports</li>
+                    <li className="flex items-center"><CheckCircle className="h-5 w-5 text-primary mr-2" />Reduced supply chain risks</li>
+                    <li className="flex items-center"><CheckCircle className="h-5 w-5 text-primary mr-2" />Access to OEM and global markets</li>
                   </ul>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-4 text-primary">For Our Operations</h3>
                   <ul className="space-y-2 text-gray-700">
                     <li className="flex items-center"><CheckCircle className="h-5 w-5 text-primary mr-2" />Continuous improvement culture</li>
-                    <li className="flex items-center"><CheckCircle className="h-5 w-5 text-primary mr-2" />Enhanced operational efficiency</li>
-                    <li className="flex items-center"><CheckCircle className="h-5 w-5 text-primary mr-2" />Employee safety and well-being</li>
-                    <li className="flex items-center"><CheckCircle className="h-5 w-5 text-primary mr-2" />Environmental responsibility</li>
+                    <li className="flex items-center"><CheckCircle className="h-5 w-5 text-primary mr-2" />Efficiency in production workflows</li>
+                    <li className="flex items-center"><CheckCircle className="h-5 w-5 text-primary mr-2" />Workplace safety leadership</li>
+                    <li className="flex items-center"><CheckCircle className="h-5 w-5 text-primary mr-2" />Environmental stewardship</li>
                   </ul>
                 </div>
               </div>
@@ -194,7 +195,7 @@ const Compliance = () => {
               Need Compliance Documentation?
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Contact us for detailed compliance documentation, certificates, and technical specifications.
+              Request our compliance certificates, technical specifications, and safety documentation.
             </p>
             <Link 
               to="/contact" 
