@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+// ManufacturingFacilities.jsx
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Factory, Warehouse, TestTube, Building } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -16,82 +17,53 @@ const ManufacturingFacilities = () => {
   const facilityFeatures = [
     {
       title: 'Production Halls',
-      description: 'Multiple dedicated lines for rubber and plastic molding',
+      description: 'Multiple dedicated production lines for rubber, plastic, and PVC components.',
       icon: <Factory className="h-8 w-8" />
     },
     {
       title: 'Storage Areas',
-      description: 'Climate-controlled raw material and finished goods warehouses',
+      description: 'Climate-controlled warehouses for raw materials and finished goods to maintain product integrity.',
       icon: <Warehouse className="h-8 w-8" />
     },
     {
-      title: 'Testing Labs',
-      description: 'Fully equipped quality control and R&D laboratories',
+      title: 'Testing & R&D Labs',
+      description: 'Fully equipped quality control and research laboratories to ensure product performance and innovation.',
       icon: <TestTube className="h-8 w-8" />
     },
     {
       title: 'Administrative Offices',
-      description: 'Modern workspaces for engineering, sales, and management',
+      description: 'Modern workspaces housing our engineering, sales, design, and management teams.',
       icon: <Building className="h-8 w-8" />
     }
   ];
 
   const galleryImages = [
-    {
-      src: 'https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?w=800&h=600&fit=crop',
-      alt: 'Exterior view of facility'
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop',
-      alt: 'Production floor close-ups'
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&h=600&fit=crop',
-      alt: 'Injection molding machines'
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=800&h=600&fit=crop',
-      alt: 'Rubber compounding area'
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=800&h=600&fit=crop',
-      alt: 'Testing lab'
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=800&h=600&fit=crop',
-      alt: 'Warehouse & loading dock'
-    }
+    // Replace placeholder URLs with real facility images when available
+    { src: 'https://via.placeholder.com/800x600?text=Facility+Exterior', alt: 'Exterior view of Millat Polymer & Rubber facility' },
+    { src: 'https://via.placeholder.com/800x600?text=Production+Floor', alt: 'Production floor with machinery' },
+    { src: 'https://via.placeholder.com/800x600?text=Injection+Molding', alt: 'Injection molding equipment' },
+    { src: 'https://via.placeholder.com/800x600?text=Rubber+Compounding', alt: 'Rubber compounding section' },
+    { src: 'https://via.placeholder.com/800x600?text=Testing+Lab', alt: 'Quality testing and R&D lab' },
+    { src: 'https://via.placeholder.com/800x600?text=Warehouse', alt: 'Warehouse and loading area' }
   ];
 
-  const openLightbox = (index: number) => {
+  const openLightbox = (index) => {
     setCurrentImageIndex(index);
     setLightboxOpen(true);
   };
 
-  const closeLightbox = () => {
-    setLightboxOpen(false);
-  };
-
-  const nextImage = () => {
-    setCurrentImageIndex((prev) => (prev + 1) % galleryImages.length);
-  };
-
-  const prevImage = () => {
-    setCurrentImageIndex((prev) => (prev - 1 + galleryImages.length) % galleryImages.length);
-  };
+  const closeLightbox = () => setLightboxOpen(false);
+  const nextImage = () => setCurrentImageIndex((prev) => (prev + 1) % galleryImages.length);
+  const prevImage = () => setCurrentImageIndex((prev) => (prev - 1 + galleryImages.length) % galleryImages.length);
 
   return (
-    <motion.div 
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5, ease: "easeIn" }}
-      className="min-h-screen"
-    >
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, ease: "easeIn" }} className="min-h-screen">
+      
       {/* Hero Banner */}
       <HeroBanner
-        backgroundImage="https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?w=1920&h=1080&fit=crop"
+        backgroundImage="https://via.placeholder.com/1920x1080?text=Manufacturing+Facility"
         title="World-Class <span class='text-primary'>Manufacturing Facilities</span>"
-        subtitle="Precision, Capacity, Excellence."
+        subtitle="Precision • Capacity • Excellence"
       />
 
       {/* Overview */}
@@ -102,7 +74,10 @@ const ManufacturingFacilities = () => {
               Our Manufacturing <span className="text-primary">Facility</span>
             </h2>
             <p className="text-xl text-gray-700 leading-relaxed">
-              Our state-of-the-art manufacturing facility is located in Lahore, Pakistan, spanning over 50,000 sq. ft. and employing a skilled workforce of 150+ professionals. Designed for efficiency and scalability, the site integrates production, testing, and storage under one roof.
+              Located in [CITY – Placeholder], Pakistan, our state-of-the-art manufacturing complex spans over [SIZE – Placeholder] sq. ft., 
+              housing a skilled workforce of [EMPLOYEE COUNT – Placeholder] professionals. 
+              Designed for maximum efficiency and scalability, the facility integrates production, quality testing, and warehousing under one roof, 
+              enabling us to meet diverse client needs across automotive, industrial, and infrastructure sectors.
             </p>
           </div>
         </div>
@@ -116,7 +91,7 @@ const ManufacturingFacilities = () => {
               Facility <span className="text-primary">Features</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our comprehensive facility is designed to support every aspect of polymer manufacturing.
+              Every element of our facility is designed to support world-class polymer manufacturing.
             </p>
           </div>
 
@@ -145,7 +120,7 @@ const ManufacturingFacilities = () => {
               Photo <span className="text-primary">Gallery</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Take a visual tour of our manufacturing facility and capabilities.
+              Explore a glimpse of our facility, production processes, and operational capabilities.
             </p>
           </div>
 
@@ -175,7 +150,7 @@ const ManufacturingFacilities = () => {
               Explore Our Production Processes
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Discover how our advanced manufacturing processes deliver consistent quality and efficiency.
+              Discover how Millat Polymer & Rubber’s advanced production methods ensure consistent quality and efficiency.
             </p>
             <Link 
               to="/production-processes" 
