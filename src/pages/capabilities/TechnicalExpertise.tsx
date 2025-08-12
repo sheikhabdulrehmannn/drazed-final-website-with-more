@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Users, Cog, Award, BookOpen } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -11,18 +11,18 @@ const TechnicalExpertise = () => {
 
   const skills = [
     {
-      title: 'Mold Design',
-      description: 'Advanced CAD/CAM capabilities for complex mold geometries',
+      title: 'Advanced Mold Design',
+      description: 'CAD/CAM-driven mold engineering for intricate rubber, PVC, and plastic components.',
       icon: <Cog className="h-8 w-8" />
     },
     {
-      title: 'Precision Tooling',
-      description: 'In-house tool and die making for exact specifications',
+      title: 'Precision Tooling & Machining',
+      description: 'In-house toolmaking ensures exact tolerances for OEM and custom parts.',
       icon: <Award className="h-8 w-8" />
     },
     {
-      title: 'Complex Product Assembly',
-      description: 'Multi-component assembly and rubber-to-metal bonding',
+      title: 'Complex Assembly & Bonding',
+      description: 'Expertise in multi-material assembly and high-strength rubber-to-metal bonding.',
       icon: <Users className="h-8 w-8" />
     }
   ];
@@ -36,9 +36,9 @@ const TechnicalExpertise = () => {
     >
       {/* Hero Banner */}
       <HeroBanner
-        backgroundImage="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&h=1080&fit=crop"
+        backgroundImage="https://via.placeholder.com/1920x1080?text=Technical+Expertise"
         title="Technical <span class='text-primary'>Expertise</span>"
-        subtitle="Decades of specialized knowledge in rubber, plastic, and PVC production"
+        subtitle="Specialized skills in polymer engineering, mold design, and advanced manufacturing."
       />
 
       {/* Overview */}
@@ -46,13 +46,13 @@ const TechnicalExpertise = () => {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto scale-in">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              Experience in <span className="text-primary">Advanced Manufacturing</span>
+              Excellence in <span className="text-primary">Polymer Manufacturing</span>
             </h2>
             <p className="text-xl text-gray-700 leading-relaxed mb-8">
-              Our team combines decades of hands-on experience with cutting-edge technology to deliver superior polymer solutions. From material science to precision manufacturing, our technical expertise spans every aspect of the production process.
+              With decades of experience in rubber, plastic, and PVC component production, Millat Polymer & Rubber (Pvt) Ltd combines deep industry knowledge with state-of-the-art manufacturing techniques. Our capabilities span material formulation, tooling design, and production automation.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              We continuously invest in our people and technology to stay at the forefront of polymer manufacturing innovation.
+              Ongoing investment in technology, equipment, and workforce training ensures we stay ahead in product quality, precision, and innovation.
             </p>
           </div>
         </div>
@@ -63,10 +63,10 @@ const TechnicalExpertise = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 scale-in">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              Skills <span className="text-primary">Showcase</span>
+              Core <span className="text-primary">Competencies</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Core competencies that enable us to tackle the most challenging manufacturing requirements.
+              The specialized skills that make us a trusted partner for demanding industrial applications.
             </p>
           </div>
 
@@ -93,7 +93,7 @@ const TechnicalExpertise = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="slide-in-left">
               <img
-                src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&h=600&fit=crop"
+                src="https://via.placeholder.com/800x600?text=Training+at+Millat"
                 alt="Continuous Training"
                 className="rounded-2xl shadow-lg w-full h-auto scale-hover"
               />
@@ -103,20 +103,20 @@ const TechnicalExpertise = () => {
                 Continuous <span className="text-primary">Training</span>
               </h2>
               <p className="text-xl text-gray-700 leading-relaxed mb-6">
-                We invest heavily in employee development through comprehensive training programs, skill upgrades, and knowledge sharing initiatives. Our team stays current with the latest manufacturing technologies and industry best practices.
+                Our technical team participates in regular skill enhancement programs covering material technology, process optimization, and emerging industry standards.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <BookOpen className="h-6 w-6 text-primary" />
-                  <span className="text-lg">Regular technical workshops</span>
+                  <span className="text-lg">Specialized manufacturing workshops</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Award className="h-6 w-6 text-primary" />
-                  <span className="text-lg">Industry certification programs</span>
+                  <span className="text-lg">Certification in ISO & automotive standards</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Users className="h-6 w-6 text-primary" />
-                  <span className="text-lg">Cross-functional skill development</span>
+                  <span className="text-lg">Cross-departmental skill sharing</span>
                 </div>
               </div>
             </div>
@@ -129,10 +129,10 @@ const TechnicalExpertise = () => {
         <div className="container mx-auto px-4 text-center">
           <div className="scale-in max-w-3xl mx-auto">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              Explore Our Innovation Capabilities
+              Partner with Our Skilled Team
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Learn about our research and development initiatives that drive continuous improvement.
+              Discover how our technical expertise can transform your product concepts into high-performance solutions.
             </p>
             <Link 
               to="/manufacturing" 
