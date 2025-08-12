@@ -13,31 +13,31 @@ const OurStory = () => {
     {
       year: '2012',
       title: 'Company Founded',
-      description: 'Millat Polymer & Rubber established with a vision for excellence',
+      description: 'Millat Polymer & Rubber (Pvt) Ltd established to deliver high-quality polymer and rubber solutions in Pakistan and abroad.',
       icon: <Factory className="h-6 w-6" />
     },
     {
-      year: '2013',
-      title: 'First Major Contract',
-      description: 'Secured first major export order to Netherlands',
+      year: '2014',
+      title: 'First Major Export',
+      description: 'Secured our first large-scale export order, marking the start of our global footprint.',
       icon: <Award className="h-6 w-6" />
     },
     {
       year: '2020',
       title: 'ISO Certification',
-      description: 'Achieved ISO 9001:2015 quality management certification',
+      description: 'Achieved ISO 9001:2015 certification, reinforcing our commitment to quality and consistency.',
       icon: <Award className="h-6 w-6" />
     },
     {
-      year: '2022',
-      title: 'Market Expansion',
-      description: 'Expanded to 15+ countries across multiple continents',
+      year: '2023',
+      title: 'Global Market Growth',
+      description: 'Expanded exports to over 15 countries, serving industries from automotive to infrastructure.',
       icon: <Globe className="h-6 w-6" />
     },
     {
       year: '2025',
-      achievement: 'Production Milestone',
-      description: 'Reached 500+ tons monthly production capacity',
+      title: 'Production Milestone',
+      description: 'Surpassed 500 tons monthly production capacity with cutting-edge manufacturing facilities.',
       icon: <TrendingUp className="h-6 w-6" />
     }
   ];
@@ -53,7 +53,7 @@ const OurStory = () => {
       <HeroBanner
         backgroundImage="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=1920&h=1080&fit=crop"
         title="Our <span class='text-primary'>Story</span>"
-        subtitle="From humble beginnings to industry leadership - discover the journey that shaped Millat Polymer & Rubber into the trusted manufacturing partner we are today."
+        subtitle="From a modest start to becoming a trusted leader in polymer and rubber manufacturing — discover the journey of Millat Polymer & Rubber (Pvt) Ltd."
       />
 
       {/* Company Origins */}
@@ -73,13 +73,13 @@ const OurStory = () => {
               </h2>
               <div className="space-y-6 text-gray-700 text-lg leading-relaxed">
                 <p>
-                  Founded in 2012, Millat Polymer & Rubber emerged from a vision to bridge the gap between quality manufacturing and customer-centric service in Pakistan's polymer industry. Our founder, Sheikh Abid Ali, recognized the growing demand for high-quality rubber and plastic components in both domestic and international markets.
+                  Founded in 2012, Millat Polymer & Rubber (Pvt) Ltd was built on a mission to combine technical expertise with precision manufacturing in Pakistan’s growing polymer industry. Our founder envisioned a company that could meet global quality benchmarks while offering customer-focused solutions.
                 </p>
                 <p>
-                  Starting with a small facility and a dedicated team of skilled professionals, we faced the early challenges of establishing credibility in a competitive market. Through unwavering commitment to quality and innovation, we gradually built trust with our first clients and began our journey toward becoming a leading manufacturer.
+                  With a small production unit, dedicated engineers, and a passion for innovation, we started developing high-quality rubber, plastic, and PVC components for automotive, industrial, and infrastructure applications. Our early dedication to quality and reliability helped us win the trust of both local and international clients.
                 </p>
                 <p>
-                  Our early focus on precision manufacturing and customer satisfaction laid the foundation for the growth and success we enjoy today.
+                  Over the years, this commitment has driven our transformation into a multi-product, globally recognized manufacturing partner for diverse industries.
                 </p>
               </div>
             </div>
@@ -95,7 +95,7 @@ const OurStory = () => {
               Our Growth <span className="text-primary">Timeline</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Key milestones that have shaped our journey from startup to industry leader.
+              Key milestones that shaped our journey from a small manufacturing unit to an international supplier.
             </p>
           </div>
 
@@ -147,7 +147,7 @@ const OurStory = () => {
               Today's <span className="text-primary">Presence</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our current capabilities and market reach demonstrate our commitment to excellence.
+              Our modern facilities, experienced workforce, and global network enable us to meet diverse customer needs with precision.
             </p>
           </div>
 
@@ -167,7 +167,7 @@ const OurStory = () => {
               </div>
               <h3 className="text-3xl font-bold text-secondary mb-2">100+</h3>
               <p className="text-xl font-semibold mb-2">Product Lines</p>
-              <p className="text-gray-600">Diverse Portfolio</p>
+              <p className="text-gray-600">From automotive to industrial and infrastructure components</p>
             </Card>
 
             <Card className="slide-in-right text-center lift-hover">
@@ -176,7 +176,7 @@ const OurStory = () => {
               </div>
               <h3 className="text-3xl font-bold text-primary mb-2">15+</h3>
               <p className="text-xl font-semibold mb-2">Countries</p>
-              <p className="text-gray-600">Global Reach</p>
+              <p className="text-gray-600">Supplying to markets worldwide</p>
             </Card>
           </div>
         </div>
@@ -190,7 +190,7 @@ const OurStory = () => {
               Explore Our Capabilities
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Discover how our advanced manufacturing capabilities can bring your projects to life.
+              Learn how our advanced manufacturing technology and expertise can support your next project.
             </p>
             <Link 
               to="/capabilities" 
